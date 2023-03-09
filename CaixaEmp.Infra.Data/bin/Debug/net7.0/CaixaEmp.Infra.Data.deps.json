@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CaixaEmp.Infra.Data/1.0.0": {
+        "dependencies": {
+          "CaixaEmp.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CaixaEmp.Infra.Data.dll": {}
+        }
+      },
+      "CaixaEmp.Domain/1.0.0": {
+        "runtime": {
+          "CaixaEmp.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CaixaEmp.Infra.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaixaEmp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

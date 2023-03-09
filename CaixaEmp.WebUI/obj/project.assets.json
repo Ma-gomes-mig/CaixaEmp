@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "CaixaEmp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CaixaEmp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CaixaEmp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaixaEmp.Application.dll": {}
+        }
+      },
+      "CaixaEmp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CaixaEmp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaixaEmp.Domain.dll": {}
+        }
+      },
+      "CaixaEmp.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CaixaEmp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CaixaEmp.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaixaEmp.Infra.Data.dll": {}
+        }
+      },
+      "CaixaEmp.Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CaixaEmp.Application": "1.0.0",
+          "CaixaEmp.Domain": "1.0.0",
+          "CaixaEmp.Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CaixaEmp.Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaixaEmp.Infra.IoC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CaixaEmp.Application/1.0.0": {
+      "type": "project",
+      "path": "../CaixaEmp.Application/CaixaEmp.Application.csproj",
+      "msbuildProject": "../CaixaEmp.Application/CaixaEmp.Application.csproj"
+    },
+    "CaixaEmp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CaixaEmp.Domain/CaixaEmp.Domain.csproj",
+      "msbuildProject": "../CaixaEmp.Domain/CaixaEmp.Domain.csproj"
+    },
+    "CaixaEmp.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../CaixaEmp.Infra.Data/CaixaEmp.Infra.Data.csproj",
+      "msbuildProject": "../CaixaEmp.Infra.Data/CaixaEmp.Infra.Data.csproj"
+    },
+    "CaixaEmp.Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../CaixaEmp.Infra.IoC/CaixaEmp.Infra.IoC.csproj",
+      "msbuildProject": "../CaixaEmp.Infra.IoC/CaixaEmp.Infra.IoC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "CaixaEmp.Infra.IoC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
+      "projectName": "CaixaEmp.WebUI",
+      "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
+              "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CaixaEmp.Application\CaixaEmp.Application.csproj" />
+    <ProjectReference Include="..\CaixaEmp.Domain\CaixaEmp.Domain.csproj" />
+    <ProjectReference Include="..\CaixaEmp.Infra.Data\CaixaEmp.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

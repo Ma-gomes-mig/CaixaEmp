@@ -1,0 +1,12 @@
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\bin\Debug\net7.0\CaixaEmp.Domain.deps.json
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\bin\Debug\net7.0\CaixaEmp.Domain.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\bin\Debug\net7.0\CaixaEmp.Domain.pdb
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.csproj.AssemblyReference.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.AssemblyInfoInputs.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.AssemblyInfo.cs
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\refint\CaixaEmp.Domain.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\CaixaEmp.Domain.pdb
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Domain\obj\Debug\net7.0\ref\CaixaEmp.Domain.dll

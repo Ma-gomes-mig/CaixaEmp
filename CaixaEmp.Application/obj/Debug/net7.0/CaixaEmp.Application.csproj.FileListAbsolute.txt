@@ -1,0 +1,15 @@
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\bin\Debug\net7.0\CaixaEmp.Application.deps.json
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\bin\Debug\net7.0\CaixaEmp.Application.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\bin\Debug\net7.0\CaixaEmp.Application.pdb
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\bin\Debug\net7.0\CaixaEmp.Domain.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\bin\Debug\net7.0\CaixaEmp.Domain.pdb
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.csproj.AssemblyReference.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.AssemblyInfoInputs.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.AssemblyInfo.cs
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.csproj.CoreCompileInputs.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.csproj.CopyComplete
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\refint\CaixaEmp.Application.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\CaixaEmp.Application.pdb
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Application\obj\Debug\net7.0\ref\CaixaEmp.Application.dll
