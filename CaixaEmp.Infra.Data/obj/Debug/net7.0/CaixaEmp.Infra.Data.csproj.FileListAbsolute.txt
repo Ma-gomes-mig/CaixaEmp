@@ -1,4 +1,5 @@
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\bin\Debug\net7.0\CaixaEmp.Infra.Data.deps.json
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\bin\Debug\net7.0\CaixaEmp.Infra.Data.runtimeconfig.json
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\bin\Debug\net7.0\CaixaEmp.Infra.Data.dll
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\bin\Debug\net7.0\CaixaEmp.Infra.Data.pdb
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\bin\Debug\net7.0\CaixaEmp.Domain.dll
@@ -12,4 +13,5 @@ C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\obj\Debug\net7.0\CaixaE
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\obj\Debug\net7.0\CaixaEmp.Infra.Data.dll
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\obj\Debug\net7.0\refint\CaixaEmp.Infra.Data.dll
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\obj\Debug\net7.0\CaixaEmp.Infra.Data.pdb
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\obj\Debug\net7.0\CaixaEmp.Infra.Data.genruntimeconfig.cache
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.Data\obj\Debug\net7.0\ref\CaixaEmp.Infra.Data.dll

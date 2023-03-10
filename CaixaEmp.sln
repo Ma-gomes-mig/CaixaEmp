@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.Infra.IoC", "Caixa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.WebUI", "CaixaEmp.WebUI\CaixaEmp.WebUI.csproj", "{3A237FF8-26A6-4905-A7D6-12BE72A0287D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.DomainTest", "CaixaEmp.DomainTest\CaixaEmp.DomainTest.csproj", "{18605B20-5A75-4887-A974-4308390C410D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18605B20-5A75-4887-A974-4308390C410D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18605B20-5A75-4887-A974-4308390C410D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18605B20-5A75-4887-A974-4308390C410D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18605B20-5A75-4887-A974-4308390C410D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
