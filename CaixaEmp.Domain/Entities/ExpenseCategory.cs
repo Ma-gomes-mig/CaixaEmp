@@ -24,7 +24,7 @@ namespace CaixaEmp.Domain.Entities
         {
             Id = id;
             ValidateName(name);
-            Description = description;
+            ValidadeDescription(description);
         }
 
         public void Update(string name, string description)
