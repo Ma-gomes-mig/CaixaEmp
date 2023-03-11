@@ -11,26 +11,26 @@ namespace CaixaEmp.DomainTest
     public class InclusionUnitTest
     {
 
-        [Fact(DisplayName = "CreateEmplooyerWithInvalidId")]
-        public void CreateEmplooyer_WithInvalidId_ResultObjectValidState()
+        [Fact(DisplayName = "CreateInclusionWithInvalidId")]
+        public void CreateInclusion_WithInvalidId_ResultObjectValidState()
         {
-            Action action = () => new Emplooyer(-1, "EmplooyerName", "EmplooyerFunction");
+            Action action = () => new Inclusion(-1, "InclusionName", "InclusionFunction");
             action.Should()
                 .Throw<CaixaEmp.Domain.Validation.DomainExceptionValidation>()
                 .WithMessage("Invalid Id");
         }
 
-        [Fact(DisplayName = "CreateExpenseCategoryWithValidParameters")]
-        public void CreateExpenseCategory_WithValidParameters_ResultObjectValidState()
+        [Fact(DisplayName = "CreateInclusionWithValidParameters")]
+        public void CreateInclusion_WithValidParameters_ResultObjectValidState()
         {
-            Action action = () => new ExpenseCategory(1, "ExpenseCategoryName", "Description");
+            Action action = () => new Inclusion(1, "InclusionName", "InclusionDescription");
             action.Should().NotThrow<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
         }
 
-        [Fact(DisplayName = "CreateExenseCategoryWithNullDescription")]
-        public void CreateExpenseCategory_WithNullDescription_DomainExceptionNullDescription()
+        [Fact(DisplayName = "CreateInclusionWithNullDescription")]
+        public void CreateInclusion_WithNullDescription_DomainExceptionNullDescription()
         {
-            Action action = () => new ExpenseCategory(1, "ExpenseCategoryName", null);
+            Action action = () => new Inclusion(1, "InclusionName", null);
             action.Should()
                 .Throw<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
         }

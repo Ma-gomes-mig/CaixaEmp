@@ -23,6 +23,13 @@ namespace CaixaEmp.Domain.Entities
 
         }
 
+        public Inclusion(int id, string name, string description)
+        {
+            DomainExceptionValidation.When(id < 0, "Invalid Id");
+            ValidateName(name);
+            ValidateDescription(description);
+        }
+
         //Construtor com todas as propriedades
         public Inclusion(int id, string name, string description, int value, DateTime dateInclusion, string priority, string status)
         {
