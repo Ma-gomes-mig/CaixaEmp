@@ -16,5 +16,13 @@ namespace CaixaEmp.DomainTest
             Action action = () => new Expense(1, "ExpenseName", "ExpenseDescription", 10, "ExpensePriority");
             action.Should().NotThrow<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
         }
+
+        [Fact(DisplayName ="CreateExenseWithNullDescription")]
+        public void CreateExpense_WithNullDescription_DomainExceptionNullDescription()
+        {
+            Action action = () => new Expense(1,"ExpenseName",null, 10, "ExpensePriority");
+            action.Should()
+                .Throw<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace CaixaEmp.DomainTest
 {
     public class EmplooyerUnitTest
     {
-        [Fact(DisplayName ="CreateEmplooyerWithValidParameters")]
+        [Fact(DisplayName ="CreateEmplooyerWithValidParameters  ")]
         public void CreateEmplooyer_WithValidParameters_ResultObjectValidState()
         {
             Action action = () => new Emplooyer(1, "EmplooyerName","EmplooyerFunction");
