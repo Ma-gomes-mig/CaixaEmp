@@ -17,5 +17,14 @@ namespace CaixaEmp.DomainTest
             action.Should()
                 .NotThrow<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
         }
+
+        [Fact(DisplayName = "CreateEmplooyerWithInvalidId")]
+        public void CreateEmplooyer_WithInvalidId_ResultObjectValidState()
+        {
+            Action action = () => new Emplooyer(-1, "EmplooyerName", "EmplooyerFunction");
+            action.Should()
+                .Throw<CaixaEmp.Domain.Validation.DomainExceptionValidation>()
+                .WithMessage("Invalid Id");
+        }
     }
 }

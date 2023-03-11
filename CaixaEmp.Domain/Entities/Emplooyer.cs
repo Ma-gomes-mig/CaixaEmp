@@ -19,10 +19,10 @@ namespace CaixaEmp.Domain.Entities
         //Construtor com todos os atributos
         public Emplooyer(int id, string name, string office)
         {
-            Id = id;
+            DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             Office = office;
-        }
+        }        
 
         public void Update(string name)
         {
@@ -42,6 +42,6 @@ namespace CaixaEmp.Domain.Entities
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), "O nome é necessário");
             Name = name;
-        }
+        }        
     }
 }
