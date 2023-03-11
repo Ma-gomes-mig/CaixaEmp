@@ -21,7 +21,7 @@ namespace CaixaEmp.Domain.Entities
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
-            Office = office;
+            ValidadeOffice(office);
         }        
 
         public void Update(string name)
@@ -42,6 +42,12 @@ namespace CaixaEmp.Domain.Entities
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), "O nome é necessário");
             Name = name;
-        }        
+        }
+
+        private void ValidadeOffice(string office)
+        {
+            DomainExceptionValidation.When(string.IsNullOrEmpty(office), "A descrição é necessária");
+            Office = office;
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace CaixaEmp.Domain.Entities
         //Construtor com todas as propriedades
         public ExpenseCategory(int id, string name, string description)
         {
-            Id = id;
+            DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             ValidadeDescription(description);
         }

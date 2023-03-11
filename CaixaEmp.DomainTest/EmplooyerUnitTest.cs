@@ -10,6 +10,15 @@ namespace CaixaEmp.DomainTest
 {
     public class EmplooyerUnitTest
     {
+        [Fact(DisplayName = "CreateExenseCategoryWithNullOffice")]
+        public void CreateExpenseCategory_WithNullOffice_DomainExceptionNullOffice()
+        {
+            Action action = () => new Emplooyer(1, "ExpenseCategoryName", null);
+            action.Should()
+                .Throw<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
+        }
+
+
         [Fact(DisplayName ="CreateEmplooyerWithValidParameters  ")]
         public void CreateEmplooyer_WithValidParameters_ResultObjectValidState()
         {
