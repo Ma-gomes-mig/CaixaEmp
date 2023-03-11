@@ -39,7 +39,7 @@ namespace CaixaEmp.Domain.Entities
         public void Update(string name, string description, DateTime dateInclusion, string priority, string status)
         {
             ValidateName(name);
-            Description = description;
+            ValidateDescription(description);
             DateInclusion = dateInclusion;
             Priority = priority;
             Status = status;
@@ -58,6 +58,12 @@ namespace CaixaEmp.Domain.Entities
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), "O nome é necessário");
             Name = name;
+        }
+
+        private void ValidateDescription(string description)
+        {
+            DomainExceptionValidation.When(string.IsNullOrEmpty(description), "O nome é necessário");
+            Description = description;
         }
     }
 }
