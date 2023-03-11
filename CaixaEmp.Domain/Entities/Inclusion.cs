@@ -35,7 +35,7 @@ namespace CaixaEmp.Domain.Entities
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
-            Description = description;
+            ValidateDescription(description);
             Value = value;
             DateInclusion = dateInclusion;
             Priority = priority;
