@@ -18,6 +18,7 @@ namespace CaixaEmp.Infra.Data.Context
         public DbSet<ExpenseCategory> Categories { get; set; }
         public DbSet<Inclusion> Inclusions { get; set; }
         public DbSet<Withdrawal> Withdrawals { get; set; }
+        public DbSet<Balance> Balances { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
