@@ -24,11 +24,12 @@ namespace CaixaEmp.Domain.Entities
         }
 
         //Construtor para teste
-        public Withdrawal(int id, string name, string description)
+        public Withdrawal(int id, string name, string description, decimal value)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             ValidateDescription(description);
+            ValidateValueIsNegative(value);
         }
 
         //Construtor com todas as propriedades
@@ -73,6 +74,11 @@ namespace CaixaEmp.Domain.Entities
             Description = description;
         }
 
+        private void ValidateValueIsNegative(decimal value)
+        {
+            DomainExceptionValidation.When(decimal.IsNegative(value), "O valor não pode ser negativo");
+            Value = value;
+        }
 
     }
 }
