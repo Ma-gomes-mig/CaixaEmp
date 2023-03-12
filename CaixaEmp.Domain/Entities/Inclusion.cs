@@ -12,7 +12,7 @@ namespace CaixaEmp.Domain.Entities
         //Atributos Inclusion
         public string Name { get; private set; }
         public string Description { get; private set; }
-        public int Value { get; private set; }
+        public float Value { get; private set; }
         public DateTime DateInclusion { get; private set; }
         public string Priority { get; private set; }
         public string Status { get; private set; }
