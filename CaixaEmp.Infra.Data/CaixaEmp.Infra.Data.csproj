@@ -23,4 +23,9 @@
     <ProjectReference Include="..\CaixaEmp.Domain\CaixaEmp.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Identity\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>
