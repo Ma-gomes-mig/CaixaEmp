@@ -17,7 +17,7 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.Property(p => p.Name).HasMaxLength(30).IsRequired();
             builder.Property(p=>p.Description).HasMaxLength(150).IsRequired();
 
-            
+            builder.HasMany(e => e.Expenses).WithOne(e => e.ExpenseCategory).HasForeignKey(f => f.ExpenseCategoryId);
         }
     }
 }
