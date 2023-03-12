@@ -12,7 +12,7 @@ namespace CaixaEmp.Domain.Entities
         //Atributos Inclusion
         public string Name { get; private set; }
         public string Description { get; private set; }
-        public float Value { get; private set; }
+        public decimal Value { get; private set; }
         public DateTime DateInclusion { get; private set; }
         public string Priority { get; private set; }
         public string Status { get; private set; }
@@ -23,20 +23,21 @@ namespace CaixaEmp.Domain.Entities
 
         }
 
-        public Inclusion(int id, string name, string description)
+        public Inclusion(int id, string name, string description, decimal value)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             ValidateDescription(description);
+            ValidateValueIsNegative(value);
         }
 
         //Construtor com todas as propriedades
-        public Inclusion(int id, string name, string description, int value, DateTime dateInclusion, string priority, string status)
+        public Inclusion(int id, string name, string description, decimal value, DateTime dateInclusion, string priority, string status)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             ValidateDescription(description);
-            Value = value;
+            ValidateValueIsNegative(value);
             DateInclusion = dateInclusion;
             Priority = priority;
             Status = status;
@@ -71,6 +72,12 @@ namespace CaixaEmp.Domain.Entities
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(description), "O nome é necessário");
             Description = description;
+        }
+
+        private void ValidateValueIsNegative(decimal value)
+        {
+            DomainExceptionValidation.When(decimal.IsNegative(value), "O valor não pode ser negativo");
+            Value = value;
         }
     }
 }

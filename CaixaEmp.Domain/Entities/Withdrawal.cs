@@ -12,7 +12,7 @@ namespace CaixaEmp.Domain.Entities
         //Atributos Withdrawal
         public string Name { get; private set; }
         public string Description { get; private set; }
-        public float Value { get; private set; }
+        public decimal Value { get; private set; }
         public DateTime DateInclusion { get; private set; }
         public string Priority { get; private set; }
         public string Status { get; private set; }
@@ -32,7 +32,7 @@ namespace CaixaEmp.Domain.Entities
         }
 
         //Construtor com todas as propriedades
-        public Withdrawal(int id, string name, string description, int value, DateTime dateInclusion, string priority, string status)
+        public Withdrawal(int id, string name, string description, decimal value, DateTime dateInclusion, string priority, string status)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
@@ -72,6 +72,7 @@ namespace CaixaEmp.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(description), "O nome é necessário");
             Description = description;
         }
+
 
     }
 }
