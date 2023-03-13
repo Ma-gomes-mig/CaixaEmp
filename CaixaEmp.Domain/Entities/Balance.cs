@@ -26,11 +26,9 @@ namespace CaixaEmp.Domain.Entities
             Date = date;
         }
 
-        public int InclusionId { get; set; }
-        public Inclusion Inclusion { get; set; }
+        public ICollection<Withdrawal> Withdrawals { get; set; }
 
-        public int WithdrawalId { get; set; }
-        public Withdrawal Withdrawal { get; set; }
+        public ICollection<Inclusion> Inclusions { get; set; } 
 
         private void ValidateValue(decimal value) 
         {

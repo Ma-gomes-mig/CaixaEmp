@@ -62,6 +62,10 @@ namespace CaixaEmp.Domain.Entities
         public int ExpenseId { get; set; }
         public Expense Expense { get; set; }
 
+        //Definição da cardinalidade N Withdrawal para 1 balance
+        public int BalanceId { get; set; }
+        public Balance Balance { get; set; }
+      
         //Fazendo validação Se nome null msg erro
         private void ValidateName(string name)
         {
