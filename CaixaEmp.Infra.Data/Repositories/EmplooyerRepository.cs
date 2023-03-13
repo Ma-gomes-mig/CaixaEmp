@@ -36,7 +36,7 @@ namespace CaixaEmp.Infra.Data.Repositories
 
         public async Task<Emplooyer> GetEmplooyerByName(string name)
         {
-            throw new NotImplementedException();
+            return await _emplooyerContext.Emplooyers.FindAsync(name);
         }
 
         public async Task<Emplooyer> Create(Emplooyer emplooyer)
