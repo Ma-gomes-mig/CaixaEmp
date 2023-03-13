@@ -1,6 +1,7 @@
 ﻿using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interface;
 using CaixaEmp.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace CaixaEmp.Infra.Data.Repositories
 
         public async Task<IEnumerable<Emplooyer>> GetAllEmplooyerAsync()
         {
-            throw new NotImplementedException();
+            return await _emplooyerContext.Emplooyers.ToListAsync();
         }
 
         public async Task<IEnumerable<Emplooyer>> GetEmplooyerByExpense(int expenseId)
