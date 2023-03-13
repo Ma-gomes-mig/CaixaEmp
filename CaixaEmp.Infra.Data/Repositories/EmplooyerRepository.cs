@@ -45,9 +45,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return emplooyer;
         }
 
-        public async Task<Emplooyer> Delete(int id)
+        public async Task<Emplooyer> Delete(Emplooyer emplooyer)
         {
-            throw new NotImplementedException();
+            _emplooyerContext.Remove(emplooyer);
+            await _emplooyerContext.SaveChangesAsync();
+            return emplooyer;
         }
 
         public async Task<Emplooyer> Update(Emplooyer emplooyer)
