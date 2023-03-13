@@ -20,6 +20,8 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.HasMany(e => e.Expenses).WithOne(e => e.Emplooyer).HasForeignKey(f => f.EmplooyerId);
             builder.HasMany(e => e.Withdrawals).WithOne(e => e.Emplooyer).HasForeignKey(f => f.EmplooyerId);
             builder.HasMany(e => e.Inclusions).WithOne(e => e.Emplooyer).HasForeignKey(f => f.EmplooyerId);
+
+            
         }
     }
 }
