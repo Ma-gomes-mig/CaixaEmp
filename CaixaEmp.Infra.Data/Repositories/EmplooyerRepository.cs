@@ -55,7 +55,9 @@ namespace CaixaEmp.Infra.Data.Repositories
 
         public async Task<Emplooyer> Update(Emplooyer emplooyer)
         {
-            throw new NotImplementedException();
+            _emplooyerContext.Update(emplooyer);
+            await _emplooyerContext.SaveChangesAsync();
+            return emplooyer;
         }
     }
 }

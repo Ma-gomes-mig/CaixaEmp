@@ -16,6 +16,6 @@ namespace CaixaEmp.Domain.Interface
 
         Task<Emplooyer> Create(Emplooyer emplooyer);
         Task<Emplooyer> Update(Emplooyer emplooyer);
-        Task<Emplooyer> Delete(int id);
+        Task<Emplooyer> Delete(Emplooyer emplooyer);
     }    
 }
