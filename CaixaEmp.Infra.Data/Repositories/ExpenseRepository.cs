@@ -43,9 +43,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return expense;
         }
 
-        public Task<Expense> Delete(int id)
+        public async Task<Expense> Delete(Expense expense)
         {
-            throw new NotImplementedException();
+            _expenseContext.Remove(expense);
+            await _expenseContext.SaveChangesAsync();
+            return expense;
         }
 
         public Task<Expense> Update(Expense expense)
