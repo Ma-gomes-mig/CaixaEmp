@@ -16,5 +16,40 @@ namespace CaixaEmp.Infra.Data.Repositories
         {
             _emplooyerContext = context;
         }
+
+        public Task<Emplooyer> Create(Emplooyer emplooyer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Emplooyer> Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Emplooyer>> GetAllEmplooyerAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Emplooyer>> GetEmplooyerByExpense(int expenseId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Emplooyer> GetEmplooyerByIdAsync(int? id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Emplooyer> GetEmplooyerByName(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Emplooyer> Update(Emplooyer emplooyer)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
