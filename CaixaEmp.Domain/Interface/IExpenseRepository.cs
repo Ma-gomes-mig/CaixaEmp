@@ -16,6 +16,6 @@ namespace CaixaEmp.Domain.Interface
 
         Task<Expense> Create(Expense expense);
         Task<Expense> Update(Expense expense);
-        Task<Expense> Delete(int id);
+        Task<Expense> Delete(Expense expense);
     }
 }
