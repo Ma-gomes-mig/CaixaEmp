@@ -1,6 +1,7 @@
 ﻿using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interface;
 using CaixaEmp.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             _expenseContext = context;
         }        
 
-        public Task<IEnumerable<Expense>> GetAllExpenseAsync()
+        public async Task<IEnumerable<Expense>> GetAllExpenseAsync()
         {
-            throw new NotImplementedException();
+            return await _expenseContext.Expenses.ToListAsync();
         }
 
         public Task<Expense> GetExpenseById(int? id)
@@ -50,9 +51,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return expense;
         }
 
-        public Task<Expense> Update(Expense expense)
+        public async Task<Expense> Update(Expense expense)
         {
-            throw new NotImplementedException();
+            _expenseContext.Update(expense);
+            await _expenseContext.SaveChangesAsync();
+            return expense;
         }
     }
 }
