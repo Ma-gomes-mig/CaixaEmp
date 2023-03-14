@@ -1,5 +1,6 @@
 ﻿using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interface;
+using CaixaEmp.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,12 @@ using System.Threading.Tasks;
 namespace CaixaEmp.Infra.Data.Repositories
 {
     public class ExpenseCategoryRepository : IExpenseCategoryRepository
-    {       
+    {
+        ApplicationDbContext _expenseCategoryContext;
+        public ExpenseCategoryRepository(ApplicationDbContext context)
+        {
+            _expenseCategoryContext = context;
+        }
 
         public Task<IEnumerable<ExpenseCategory>> GetAllCategoryAsync()
         {
@@ -26,9 +32,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<ExpenseCategory> Create(ExpenseCategory expenseCategory)
+        public async Task<ExpenseCategory> Create(ExpenseCategory expenseCategory)
         {
-            throw new NotImplementedException();
+            _expenseCategoryContext.Add(expenseCategory);
+            await _expenseCategoryContext.SaveChangesAsync();
+            return expenseCategory;
         }
 
         public Task<ExpenseCategory> Delete(int id)
