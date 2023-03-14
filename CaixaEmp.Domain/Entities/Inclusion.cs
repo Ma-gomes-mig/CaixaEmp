@@ -15,7 +15,7 @@ namespace CaixaEmp.Domain.Entities
         public decimal Value { get; private set; }
         public DateTime DateInclusion { get; private set; }
         public string Priority { get; private set; }
-        public string Status { get; private set; }
+        public bool Status { get; private set; }
 
         //Construtor vazio
         public Inclusion()
@@ -32,7 +32,7 @@ namespace CaixaEmp.Domain.Entities
         }
 
         //Construtor com todas as propriedades
-        public Inclusion(int id, string name, string description, decimal value, DateTime dateInclusion, string priority, string status)
+        public Inclusion(int id, string name, string description, decimal value, DateTime dateInclusion, string priority, bool status)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
@@ -44,7 +44,7 @@ namespace CaixaEmp.Domain.Entities
         }
 
         //Construtor para Update
-        public void Update(string name, string description, DateTime dateInclusion, string priority, string status)
+        public void Update(string name, string description, DateTime dateInclusion, string priority, bool status)
         {
             ValidateName(name);
             ValidateDescription(description);

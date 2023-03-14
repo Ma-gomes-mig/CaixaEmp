@@ -12,10 +12,8 @@ namespace CaixaEmp.Domain.Interface
         Task<IEnumerable<ExpenseCategory>> GetAllCategoryAsync();
         Task<IEnumerable<ExpenseCategory>> GetCategoryByExpense(int expenseId);
         Task<ExpenseCategory> GetCategoryByIdAsync(int? Id);
-
-
         Task<ExpenseCategory> Create(ExpenseCategory expenseCategory);
         Task<ExpenseCategory> Update(ExpenseCategory expenseCategory);
-        Task<ExpenseCategory> Delete(int id);
+        Task<ExpenseCategory> Delete(ExpenseCategory expenseCategory);
     }
 }
