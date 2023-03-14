@@ -64,9 +64,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return inclusion;
         }
 
-        public Task<Inclusion> Delete(int id)
+        public async Task<Inclusion> Delete(Inclusion inclusion)
         {
-            throw new NotImplementedException();
+            _inclusionContext.Remove(inclusion);
+            await _inclusionContext.SaveChangesAsync();
+            return inclusion;
         }
 
         public Task<Inclusion> Update(Inclusion inclusion)
