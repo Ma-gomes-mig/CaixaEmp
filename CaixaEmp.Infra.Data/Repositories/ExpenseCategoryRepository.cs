@@ -1,6 +1,7 @@
 ﻿using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interface;
 using CaixaEmp.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             _expenseCategoryContext = context;
         }
 
-        public Task<IEnumerable<ExpenseCategory>> GetAllCategoryAsync()
+        public async Task<IEnumerable<ExpenseCategory>> GetAllCategoryAsync()
         {
-            throw new NotImplementedException();
+            return await _expenseCategoryContext.Categories.ToListAsync();
         }
 
         public Task<IEnumerable<ExpenseCategory>> GetCategoryByExpense(int expenseId)
