@@ -28,9 +28,10 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _expenseContext.Expenses.FindAsync(id);
         }
 
-        public Task<IEnumerable<Expense>> GetExpenseByEmplooyer(int emplooyerId)
+        //Ainda não foi testado
+        public async Task<IEnumerable<Expense>> GetExpenseByEmplooyer(int id)
         {
-            throw new NotImplementedException();
+            return await _expenseContext.Expenses.Where(e => e.EmplooyerId == id).ToListAsync();
         }
 
         public async Task<Expense> GetExpenseCategory(int? id)
