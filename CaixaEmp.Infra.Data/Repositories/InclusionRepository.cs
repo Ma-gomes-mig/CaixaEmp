@@ -1,6 +1,7 @@
 ﻿using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interface;
 using CaixaEmp.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             _inclusionContext = context;
         }       
 
-        public Task<IEnumerable<Inclusion>> GetAllInclusionAsync()
+        public async Task<IEnumerable<Inclusion>> GetAllInclusionAsync()
         {
-            throw new NotImplementedException();
+            return await _inclusionContext.Inclusions.ToListAsync();
         }
 
         public Task<IEnumerable<Inclusion>> GetInclusionAproved(Inclusion status)
