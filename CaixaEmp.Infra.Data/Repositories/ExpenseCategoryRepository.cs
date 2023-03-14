@@ -39,9 +39,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return expenseCategory;
         }
 
-        public Task<ExpenseCategory> Delete(int id)
+        public async Task<ExpenseCategory> Delete(ExpenseCategory expenseCategory)
         {
-            throw new NotImplementedException();
+            _expenseCategoryContext.Remove(expenseCategory);
+            await _expenseCategoryContext.SaveChangesAsync();
+            return expenseCategory;
         }
 
         public Task<ExpenseCategory> Update(ExpenseCategory expenseCategory)
