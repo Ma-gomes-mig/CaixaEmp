@@ -20,6 +20,6 @@ namespace CaixaEmp.Domain.Interface
 
         Task<Inclusion> Create(Inclusion inclusion);
         Task<Inclusion> Update(Inclusion inclusion);
-        Task<Inclusion> Delete(int id);
+        Task<Inclusion> Delete(Inclusion inclusion);
     }
 }
