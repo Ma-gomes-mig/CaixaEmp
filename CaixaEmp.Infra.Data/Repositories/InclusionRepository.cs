@@ -21,12 +21,7 @@ namespace CaixaEmp.Infra.Data.Repositories
         public async Task<IEnumerable<Inclusion>> GetAllInclusionAsync()
         {
             return await _inclusionContext.Inclusions.ToListAsync();
-        }
-
-        public Task<IEnumerable<Inclusion>> GetInclusionAproved(Inclusion status)
-        {
-            throw new NotImplementedException();
-        }
+        }        
 
         public async Task<IEnumerable<Inclusion>> GetInclusionByEmplooyer(int emplooyerId)
         {
@@ -48,12 +43,20 @@ namespace CaixaEmp.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionByPriority(Inclusion priority)
+        public Task<IEnumerable<Inclusion>> GetInclusionByPriority(string priority)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionReproved(Inclusion status)
+        public async Task<IEnumerable<Inclusion>> GetInclusionAproved(bool status)
+        {
+            var query = from i in _inclusionContext.Inclusions
+                        where i.Status == true
+                        select i;
+            return await query.ToListAsync();
+        }
+
+        public Task<IEnumerable<Inclusion>> GetInclusionReproved(bool status)
         {
             throw new NotImplementedException();
         }
