@@ -56,9 +56,12 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await query.ToListAsync();
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionReproved(bool status)
+        public async Task<IEnumerable<Inclusion>> GetInclusionReproved(bool status)
         {
-            throw new NotImplementedException();
+            var query = from i in _inclusionContext.Inclusions
+                        where i.Status != true
+                        select i;
+            return await query.ToListAsync();
         }
 
         public async Task<Inclusion> Create(Inclusion inclusion)
