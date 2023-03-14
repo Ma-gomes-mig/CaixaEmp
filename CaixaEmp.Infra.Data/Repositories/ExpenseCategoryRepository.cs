@@ -27,9 +27,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<ExpenseCategory> GetCategoryByIdAsync(int? Id)
+        public async Task<ExpenseCategory> GetCategoryByIdAsync(int? Id)
         {
-            throw new NotImplementedException();
+            return await _expenseCategoryContext.Categories.FindAsync(Id);
         }
 
         public async Task<ExpenseCategory> Create(ExpenseCategory expenseCategory)
