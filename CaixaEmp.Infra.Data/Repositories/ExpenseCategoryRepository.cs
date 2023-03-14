@@ -46,9 +46,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return expenseCategory;
         }
 
-        public Task<ExpenseCategory> Update(ExpenseCategory expenseCategory)
+        public async Task<ExpenseCategory> Update(ExpenseCategory expenseCategory)
         {
-            throw new NotImplementedException();
+            _expenseCategoryContext.Update(expenseCategory);
+            await _expenseCategoryContext.SaveChangesAsync();
+            return expenseCategory;
         }
     }
 }
