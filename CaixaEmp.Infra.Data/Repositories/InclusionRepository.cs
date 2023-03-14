@@ -33,9 +33,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _inclusionContext.Inclusions.Where(i => i.Id == emplooyerId).ToListAsync();
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionByExpense(int expenseId)
+        public async Task<IEnumerable<Inclusion>> GetInclusionByExpense(int expenseId)
         {
-            throw new NotImplementedException();
+            return await _inclusionContext.Inclusions.Where(i => i.Id == expenseId).ToListAsync();
         }
 
         public async Task<Inclusion> GetInclusionById(int? id)
