@@ -57,9 +57,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Inclusion> Create(Inclusion inclusion)
+        public async Task<Inclusion> Create(Inclusion inclusion)
         {
-            throw new NotImplementedException();
+            _inclusionContext.Add(inclusion);
+            await _inclusionContext.SaveChangesAsync();
+            return inclusion;
         }
 
         public Task<Inclusion> Delete(int id)
