@@ -32,9 +32,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<Withdrawal> GetWithdrawalById(int? id)
+        public async Task<Withdrawal> GetWithdrawalById(int? id)
         {
-            throw new NotImplementedException();
+            return await _withdrawalContext.Withdrawals.FindAsync(id);
         }
 
         public Task<IEnumerable<Withdrawal>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
