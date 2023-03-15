@@ -43,9 +43,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionByPriority(string priority)
+        public async Task<IEnumerable<Inclusion>> GetInclusionByPriority(string priority)
         {
-            throw new NotImplementedException();
+            return await _inclusionContext.Inclusions.Where(i=>i.Priority == priority).ToListAsync();
         }
 
         public async Task<IEnumerable<Inclusion>> GetInclusionAproved(bool status)

@@ -3252,27 +3252,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+    "C:\\Users\\ti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
       "projectName": "CaixaEmp.WebUI",
       "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
       "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
-      "projectName": "CaixaEmp.WebUI",
-      "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\obj\\",
->>>>>>> bb3a3385a35054dbe8400d2cc462eaa630c774e2
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3286,13 +3278,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
               "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj"
-=======
-            "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
-              "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj"
->>>>>>> bb3a3385a35054dbe8400d2cc462eaa630c774e2
             }
           }
         }
@@ -3325,7 +3312,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
