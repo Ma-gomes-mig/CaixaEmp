@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "TCBDhGxV+J5jlmlXwEXyOnKC3T4ZGG1TVbheQigWNGefdeNCE4CTvPVhkHr2R6Fwul9kx5+jQ84zcpieBPbgXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
+=======
+  "dgSpecHash": "JBsAXFfFKNrwv2jkmpCylrC6RGKbGo67yg0qgBmrn1QGZRvDCVAm6GP2LVafltPYTuTMX4G5HZMJJsGHgNIa1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
+>>>>>>> bb3a3385a35054dbe8400d2cc462eaa630c774e2
   "expectedPackageFiles": [],
   "logs": []
 }
