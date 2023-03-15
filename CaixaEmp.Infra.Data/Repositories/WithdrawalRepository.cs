@@ -1,6 +1,7 @@
 ﻿using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interface;
 using CaixaEmp.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,9 +18,9 @@ namespace CaixaEmp.Infra.Data.Repositories
             _withdrawalContext = context;
         }        
 
-        public Task<IEnumerable<Withdrawal>> GetAllWithdrawalAsync()
+        public async Task<IEnumerable<Withdrawal>> GetAllWithdrawalAsync()
         {
-            throw new NotImplementedException();
+            return await _withdrawalContext.Withdrawals.ToListAsync();
         }        
 
         public Task<IEnumerable<Withdrawal>> GetWithdrawalByEmplooyer(int emplooyerId)
