@@ -70,9 +70,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             await _withdrawalContext.SaveChangesAsync();
             return withdrawal;
         }
-        public Task<Withdrawal> Update(Withdrawal withdrawal)
+        public async Task<Withdrawal> Update(Withdrawal withdrawal)
         {
-            throw new NotImplementedException();
+            _withdrawalContext.Add(withdrawal);
+            await _withdrawalContext.SaveChangesAsync();
+            return withdrawal;
         }
     }
 }
