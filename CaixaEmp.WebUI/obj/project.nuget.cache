@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BLBhIArZG1pDz0U974+PbYqqNPX5btnaqGzSoNSvcFJ+u9/B1VrXTpgDXuiWuE6m5AysfhTJB0qlWWTudJQ02A==",
+  "dgSpecHash": "BZ6uv/zSMKpwW+FSA/9MuzGlsNZK2hNhixat6ObnlOq9KBI/lFLAo094VBB2Tn9gvkWif35tBlfY3vv5At82yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ti\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

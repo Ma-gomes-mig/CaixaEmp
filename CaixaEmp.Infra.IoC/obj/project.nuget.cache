@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3+7OxqGS9Tfpdai9juCqzmciNZ45xWxtzkiKoVL42D7PN6PyC3blf5mp5JED6goHD6UFI1KWljEvuLBYT5boEA==",
+  "dgSpecHash": "k+DmvKS+Lde66QhcxHkg1y4RiZKh9Grnol3oVvAps4nFRD8/NiX30V2ODQoTm3V1JkCxyUoQ3NwdX7x4q+kMMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
+  "projectFilePath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ti\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

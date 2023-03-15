@@ -3257,11 +3257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
       "projectName": "CaixaEmp.WebUI",
-      "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
+      "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
       "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3278,8 +3278,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
-              "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj"
+            "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
+              "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj"
             }
           }
         }

@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
+      "projectUniqueName": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
       "projectName": "CaixaEmp.Application",
-      "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
+      "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
       "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -53,8 +53,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
-              "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
+            "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+              "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
             }
           }
         }

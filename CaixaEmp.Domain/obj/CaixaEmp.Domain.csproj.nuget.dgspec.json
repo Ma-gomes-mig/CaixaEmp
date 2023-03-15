@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {}
+    "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+    "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
         "projectName": "CaixaEmp.Domain",
-        "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
+        "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
         "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
