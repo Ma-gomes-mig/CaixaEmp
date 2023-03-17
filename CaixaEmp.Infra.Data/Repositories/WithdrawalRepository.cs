@@ -81,9 +81,16 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await query.ToListAsync();
         }
 
-        public Task<IEnumerable<Withdrawal>> GetWithdrawalAproved(bool status)
+        public async Task<IEnumerable<Withdrawal>> GetWithdrawalAproved(bool status)
         {
-            throw new NotImplementedException();
+            var query = from i in _withdrawalContext.Withdrawals
+                        where i.Status == true
+                        select i;
+            foreach( var item in query)
+            {
+                Console.WriteLine(item);
+            }
+            return await query.ToListAsync() ;
         }
 
         public async Task<Withdrawal> Create(Withdrawal withdrawal)
