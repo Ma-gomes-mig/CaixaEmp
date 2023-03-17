@@ -46,9 +46,12 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await query.ToListAsync();
         }
 
-        public Task<IEnumerable<Withdrawal>> GetWithdrawalByPriority(Withdrawal priority)
+        public async Task<IEnumerable<Withdrawal>> GetWithdrawalByPriority(string priority)
         {
-            throw new NotImplementedException();
+            var query = from i in _withdrawalContext.Withdrawals
+                        where i.Priority == priority
+                        select i;
+            return await query.ToListAsync();
         }
 
         public Task<IEnumerable<Withdrawal>> GetInclusionReproved(bool status)

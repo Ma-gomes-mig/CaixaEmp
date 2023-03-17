@@ -12,9 +12,9 @@ namespace CaixaEmp.Domain.Interface
         Task<IEnumerable<Withdrawal>> GetAllWithdrawalAsync();
         Task<Withdrawal> GetWithdrawalById(int? id);
         Task<IEnumerable<Withdrawal>> GetWithdrawalByExpense(int expenseId);
-        Task<IEnumerable<Withdrawal>> GetWithdrawalByEmplooyer(int emplooyerId);
+        Task<IEnumerable<Withdrawal>> GetWithdrawalByEmplooyer(string emplooyerName);
         Task<IEnumerable<Withdrawal>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate);
-        Task<IEnumerable<Withdrawal>> GetWithdrawalByPriority(Withdrawal priority);
+        Task<IEnumerable<Withdrawal>> GetWithdrawalByPriority(string priority);
         Task<IEnumerable<Withdrawal>> GetWithdrawalAproved(bool status);
         Task<IEnumerable<Withdrawal>> GetInclusionReproved(bool status);
 
