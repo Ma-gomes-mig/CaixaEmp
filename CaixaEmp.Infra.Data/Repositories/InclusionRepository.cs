@@ -52,11 +52,7 @@ namespace CaixaEmp.Infra.Data.Repositories
         {
             var query = from i in _inclusionContext.Inclusions
                         where i.Status == true
-                        select i;
-            foreach (var itens in query)
-            {
-                Console.WriteLine(itens);
-            }
+                        select i;            
 
             return await query.ToListAsync();
         }

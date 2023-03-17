@@ -38,9 +38,12 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _withdrawalContext.Withdrawals.FindAsync(id);
         }
 
-        public Task<IEnumerable<Withdrawal>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
+        public async Task<IEnumerable<Withdrawal>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
         {
-            throw new NotImplementedException();
+            var query = from i in _withdrawalContext.Withdrawals
+                        where i.DateInclusion > beginDate && i.DateInclusion < endDate
+                        select i;
+            return await query.ToListAsync();
         }
 
         public Task<IEnumerable<Withdrawal>> GetWithdrawalByPriority(Withdrawal priority)

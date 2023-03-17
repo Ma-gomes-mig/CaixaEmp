@@ -30,6 +30,7 @@ namespace CaixaEmp.Domain.Entities
             ValidateName(name);
             ValidateDescription(description);
             ValidateValueIsNegative(value);
+            
         }
 
         //Construtor com todas as propriedades
