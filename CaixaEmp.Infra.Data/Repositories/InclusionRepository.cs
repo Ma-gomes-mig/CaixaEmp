@@ -38,9 +38,16 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _inclusionContext.Inclusions.FindAsync(id);
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionByPeriod(DateTime beginDate, DateTime endDate)
+        public async Task<IEnumerable<Inclusion>> GetInclusionByPeriod(DateTime beginDate, DateTime endDate)
         {
-            throw new NotImplementedException();
+            var query = from i in _inclusionContext.Inclusions
+                        where i.DateInclusion > beginDate && i.DateInclusion < endDate
+                        select i;
+            foreach (var i in query)
+            {
+                Console.WriteLine(i);
+            }
+            return await query.ToListAsync();
         }
 
         public async Task<IEnumerable<Inclusion>> GetInclusionByPriority(string priority)
