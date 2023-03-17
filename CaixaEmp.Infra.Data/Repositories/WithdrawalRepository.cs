@@ -23,9 +23,12 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _withdrawalContext.Withdrawals.ToListAsync();
         }        
 
-        public Task<IEnumerable<Withdrawal>> GetWithdrawalByEmplooyer(int emplooyerId)
+        public async Task<IEnumerable<Withdrawal>> GetWithdrawalByEmplooyer(string emplooyerName)
         {
-            throw new NotImplementedException();
+            var query = from i in _withdrawalContext.Withdrawals
+                        where i.Name == emplooyerName
+                        select i;
+            return await query.ToListAsync();
         }
 
         public Task<IEnumerable<Withdrawal>> GetWithdrawalByExpense(int expenseId)
