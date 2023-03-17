@@ -22,7 +22,12 @@ namespace CaixaEmp.Infra.Data.Repositories
         public async Task<IEnumerable<Withdrawal>> GetAllWithdrawalAsync()
         {
             return await _withdrawalContext.Withdrawals.ToListAsync();
-        }        
+        }
+
+        public async Task<Withdrawal> GetWithdrawalById(int? id)
+        {
+            return await _withdrawalContext.Withdrawals.FindAsync(id);
+        }
 
         public async Task<IEnumerable<Withdrawal>> GetWithdrawalByEmplooyer(int emplooyerId)
         {
@@ -46,12 +51,7 @@ namespace CaixaEmp.Infra.Data.Repositories
                 Console.WriteLine(item);
             }
             return await query.ToListAsync();
-        }
-
-        public async Task<Withdrawal> GetWithdrawalById(int? id)
-        {
-            return await _withdrawalContext.Withdrawals.FindAsync(id);
-        }
+        }        
 
         public async Task<IEnumerable<Withdrawal>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
         {
