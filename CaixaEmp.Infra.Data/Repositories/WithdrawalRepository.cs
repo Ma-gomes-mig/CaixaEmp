@@ -4,6 +4,7 @@ using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,9 +69,16 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await query.ToListAsync();
         }
 
-        public Task<IEnumerable<Withdrawal>> GetInclusionReproved(bool status)
+        public async Task<IEnumerable<Withdrawal>> GetInclusionReproved(bool status)
         {
-            throw new NotImplementedException();
+            var query = from i in _withdrawalContext.Withdrawals
+                        where i.Status == false
+                        select i;
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
+            return await query.ToListAsync();
         }
 
         public Task<IEnumerable<Withdrawal>> GetWithdrawalAproved(bool status)
