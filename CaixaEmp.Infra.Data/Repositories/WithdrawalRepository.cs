@@ -58,6 +58,10 @@ namespace CaixaEmp.Infra.Data.Repositories
             var query = from i in _withdrawalContext.Withdrawals
                         where i.DateInclusion > beginDate && i.DateInclusion < endDate
                         select i;
+            foreach (var item in query)
+            {
+                Console.WriteLine(item);
+            }
             return await query.ToListAsync();
         }
 
