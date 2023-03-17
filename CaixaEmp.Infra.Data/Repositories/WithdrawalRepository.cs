@@ -66,6 +66,10 @@ namespace CaixaEmp.Infra.Data.Repositories
             var query = from i in _withdrawalContext.Withdrawals
                         where i.Priority == priority
                         select i;
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
             return await query.ToListAsync();
         }
 
