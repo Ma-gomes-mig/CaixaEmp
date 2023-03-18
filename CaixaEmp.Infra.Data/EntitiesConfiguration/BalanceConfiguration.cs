@@ -17,8 +17,7 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.Property(p => p.Value).HasPrecision(10, 2).IsRequired();
             builder.Property(p => p.Date);
 
-            builder.HasMany(e => e.Withdrawals).WithOne(e => e.Balance).HasForeignKey(f => f.BalanceId);
-            builder.HasMany(e => e.Inclusions).WithOne(e => e.Balance).HasForeignKey(f => f.BalanceId);
+            
         }
     }
 }
