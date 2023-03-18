@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KROzIHsrCKAPbk+wgaL769CnU8EIHTWkYbBZdMhEbKgpUk6C1LFMFvkFou1rVyVYSy7Oid6MMqBTS6ahve6GVg==",
+  "dgSpecHash": "c7Eh2PtoFPGFvXTWsznYayhdwQRVDCQ3SEmR+Rlg0WaS2yYT+n5oq4NGcZoXdFJ6izMEguu5qRQ8KAlBtjDS3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.3\\microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.3\\microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
+    "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.3\\microsoft.entityframeworkcore.tools.7.0.3.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

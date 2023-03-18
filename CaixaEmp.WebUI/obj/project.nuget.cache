@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UKCMSPsI0AONpWNPMnWytKl0KjUio/udSH6XCoyOgz8x61RjpoFWcfTIGmAkmh/xPeV89zFcYNF06Bb8muVHhA==",
+  "dgSpecHash": "QyN7rSo/egRR2KTZFxgTUbUpaO+Q4p9CbGMxUq/nGifmrgQK7vQf0Vv36Q2X3EY960hDRiqHSAaa7aRALSACtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.WebUI\\CaixaEmp.WebUI.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.3\\microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.3\\microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
+    "C:\\Users\\ti\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.3\\microsoft.entityframeworkcore.tools.7.0.3.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\ti\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
