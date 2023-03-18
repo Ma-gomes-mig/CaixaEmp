@@ -1,4 +1,6 @@
-﻿using CaixaEmp.Infra.Data.Context;
+﻿using CaixaEmp.Domain.Interface;
+using CaixaEmp.Infra.Data.Context;
+using CaixaEmp.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace CaixaEmp.Infra.IoC
 {
-    public class DependencyInjection
+    public static class DependencyInjection
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
@@ -18,8 +20,12 @@ namespace CaixaEmp.Infra.IoC
              options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"
             ), b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 
-            
-            
+            services.AddScoped<IEmplooyerRepository, EmplooyerRepository>();
+            services.AddScoped<IExpenseCategoryRepository, ExpenseCategoryRepository>();
+            services.AddScoped<IExpenseRepository, ExpenseRepository>();
+            services.AddScoped<IInclusionRepository, InclusionRepository>();
+            services.AddScoped<IWithdrawalRepository, WithdrawalRepository>();
+
 
             return services;
         }
