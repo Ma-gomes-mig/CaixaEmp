@@ -30,7 +30,7 @@ namespace CaixaEmp.Application.DTOs
 
         [Required]
         [MaxLength(30)]
-        [DisplayName("Estatus")]
+        [DisplayName("Status")]
         public string Status { get; set; }
 
         //Definição da cardinalidade N Inclusion para 1 Emplooyer

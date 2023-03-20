@@ -23,10 +23,23 @@ namespace CaixaEmp.Application.DTOs
         [DisplayName("Descrição")]
         public string Description { get; set; }
 
+        [Required]
         [DisplayName("Valor")]
         public decimal Value { get; set; }
 
+        [Required]
         [DisplayName("Data")]
         public DateTime DateWithdrawal { get; set; }
+
+        [MaxLength(30)]
+        [DisplayName("Prioridade")]
+        public string Priority { get; set; }
+
+        [DisplayName("Status")]
+        public bool Status { get; set; }
+
+
+
+
     }
 }
