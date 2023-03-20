@@ -18,6 +18,10 @@ namespace CaixaEmp.Application.DTOs
         [DisplayName("Valor")]
         public decimal Value { get; set; }
 
+        [Required]
+        [DisplayName("Data")]
+        public DateTime Date { get; set; }
+
         public ICollection<Inclusion> Inclusions { get; set; }
         public ICollection<Withdrawal> Withdrawals { get; set; }
 
