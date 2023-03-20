@@ -5,15 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CaixaEmp.Domain.Interface
+namespace CaixaEmp.Domain.Interfaces
 {
     public interface IEmplooyerRepository
     {
         Task<IEnumerable<Emplooyer>> GetAllEmplooyerAsync();
         Task<Emplooyer> GetEmplooyerByIdAsync(int? id);
         Task<Emplooyer> GetEmplooyerByName(string name);
-
-        //Task<IEnumerable<Emplooyer>> GetEmplooyerByExpense(Expense expense);
         Task<Emplooyer> Create(Emplooyer emplooyer);
         Task<Emplooyer> Update(Emplooyer emplooyer);
         Task<Emplooyer> Delete(Emplooyer emplooyer);

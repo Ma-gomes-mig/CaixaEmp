@@ -1,4 +1,4 @@
-﻿using CaixaEmp.Domain.Entities;
+﻿        using CaixaEmp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -20,10 +20,7 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.Property(p => p.Priority).HasMaxLength(30).IsRequired();
 
             builder.HasOne(e => e.Emplooyer).WithMany(e => e.Expenses).HasForeignKey(f => f.EmplooyerId);
-            builder.HasOne(e => e.ExpenseCategory).WithMany(e => e.Expenses).HasForeignKey(f => f.ExpenseCategoryId);
-            builder.HasMany(e => e.Withdrawals).WithOne(e => e.Expense).HasForeignKey(f => f.ExpenseId);
-            builder.HasMany(e => e.Inclusions).WithOne(e => e.Expense).HasForeignKey(f => f.ExpenseId);
-            
+            builder.HasOne(e => e.ExpenseCategory).WithMany(e => e.Expenses).HasForeignKey(f => f.ExpenseCategoryId);            
         }
     }
 }

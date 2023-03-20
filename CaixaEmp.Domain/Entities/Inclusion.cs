@@ -1,4 +1,4 @@
-﻿using CaixaEmp.Domain.Validation;
+﻿    using CaixaEmp.Domain.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,11 +53,11 @@ namespace CaixaEmp.Domain.Entities
             Status = status;
         }
 
-        //Definição da cardinalidade N Withdrawal para 1 Emplooyer
+        //Definição da cardinalidade N Inclusion para 1 Emplooyer
         public int EmplooyerId { get; set; }
         public Emplooyer Emplooyer { get; set; }
 
-        //Definição da cardinalidade N Withdrawal para 1 Expense
+        //Definição da cardinalidade N inclusion para 1 Expense
         public int ExpenseId { get; set; }
         public Expense Expense { get; set; }
 

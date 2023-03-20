@@ -13,9 +13,9 @@ namespace CaixaEmp.Domain.Entities
         public string Name { get; private set; }
         public string Description { get; private set; }
         public decimal Value { get; private set; }
-        public DateTime DateInclusion { get; private set; }
+        public DateTime DateWithdrawal { get; private set; }
         public string Priority { get; private set; }
-        public string Status { get; private set; }
+        public bool Status { get; private set; }
 
         //Construtor vazio
         public Withdrawal()
@@ -30,26 +30,27 @@ namespace CaixaEmp.Domain.Entities
             ValidateName(name);
             ValidateDescription(description);
             ValidateValueIsNegative(value);
+            
         }
 
         //Construtor com todas as propriedades
-        public Withdrawal(int id, string name, string description, decimal value, DateTime dateInclusion, string priority, string status)
+        public Withdrawal(int id, string name, string description, decimal value, DateTime dateWithdrawal, string priority, bool status)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             ValidateDescription(description);
             Value = value;
-            DateInclusion = dateInclusion;
+            DateWithdrawal = dateWithdrawal;
             Priority = priority;
             Status = status;
         }
 
         //Construtor para Update
-        public void Update(string name, string description, DateTime dateInclusion, string priority, string status)
+        public void Update(string name, string description, DateTime dateWithdrawal, string priority, bool status)
         {
             ValidateName(name);
             Description = description;
-            DateInclusion = dateInclusion;
+            DateWithdrawal = dateWithdrawal;
             Priority = priority;
             Status = status;
         }

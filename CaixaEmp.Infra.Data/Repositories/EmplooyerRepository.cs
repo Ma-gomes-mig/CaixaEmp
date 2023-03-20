@@ -1,5 +1,5 @@
 ﻿using CaixaEmp.Domain.Entities;
-using CaixaEmp.Domain.Interface;
+using CaixaEmp.Domain.Interfaces;
 using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,11 +23,6 @@ namespace CaixaEmp.Infra.Data.Repositories
         {
             return await _emplooyerContext.Emplooyers.ToListAsync();
         }
-
-        //public async Task<IEnumerable<Emplooyer>> GetEmplooyerByExpense(Expense expense)
-        //{
-        //    _emplooyerContext.FindAsync(expense)
-        //} 
 
         public async Task<Emplooyer> GetEmplooyerByIdAsync(int? id)
         {

@@ -1,5 +1,5 @@
 ﻿using CaixaEmp.Domain.Entities;
-using CaixaEmp.Domain.Interface;
+using CaixaEmp.Domain.Interfaces;
 using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -38,14 +38,21 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _inclusionContext.Inclusions.FindAsync(id);
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionByPeriod(DateTime beginDate, DateTime endDate)
+        public async Task<IEnumerable<Inclusion>> GetInclusionByPeriod(DateTime beginDate, DateTime endDate)
         {
-            throw new NotImplementedException();
+            var query = from i in _inclusionContext.Inclusions
+                        where i.DateInclusion > beginDate && i.DateInclusion < endDate
+                        select i;
+            foreach (var i in query)
+            {
+                Console.WriteLine(i);
+            }
+            return await query.ToListAsync();
         }
 
-        public Task<IEnumerable<Inclusion>> GetInclusionByPriority(string priority)
+        public async Task<IEnumerable<Inclusion>> GetInclusionByPriority(string priority)
         {
-            throw new NotImplementedException();
+            return await _inclusionContext.Inclusions.Where(i=>i.Priority == priority).ToListAsync();
         }
 
         public async Task<IEnumerable<Inclusion>> GetInclusionAproved(bool status)
@@ -53,6 +60,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             var query = from i in _inclusionContext.Inclusions
                         where i.Status == true
                         select i;
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
+
             return await query.ToListAsync();
         }
 
@@ -61,6 +73,10 @@ namespace CaixaEmp.Infra.Data.Repositories
             var query = from i in _inclusionContext.Inclusions
                         where i.Status != true
                         select i;
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
             return await query.ToListAsync();
         }
 

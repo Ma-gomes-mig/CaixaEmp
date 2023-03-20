@@ -208,6 +208,18 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.3"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -1057,7 +1069,8 @@
         "dependencies": {
           "CaixaEmp.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.3"
         },
         "compile": {
           "bin/placeholder/CaixaEmp.Infra.Data.dll": {}
@@ -1346,6 +1359,31 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.3": {
+      "sha512": "yHFlYPZS3Jx7JMCQnGKfJzv95rJWVcmcUn/OW5cbCyWgQk81JJpTZ9Q6kkvwquYjFRfvYHBGuXNIYhAJokOBTQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/7.0.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.7.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -3234,19 +3272,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+    "C:\\Users\\ti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
+      "projectUniqueName": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
       "projectName": "CaixaEmp.Infra.IoC",
-      "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\obj\\",
+      "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
+      "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3260,14 +3298,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj": {
-              "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj"
+            "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj": {
+              "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj"
             },
-            "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
-              "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
+            "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+              "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
             },
-            "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj"
+            "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\ti\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj"
             }
           }
         }
@@ -3297,7 +3335,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
