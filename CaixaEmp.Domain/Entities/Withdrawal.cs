@@ -13,7 +13,7 @@ namespace CaixaEmp.Domain.Entities
         public string Name { get; private set; }
         public string Description { get; private set; }
         public decimal Value { get; private set; }
-        public DateTime DateInclusion { get; private set; }
+        public DateTime DateWithdrawal { get; private set; }
         public string Priority { get; private set; }
         public bool Status { get; private set; }
 

@@ -17,7 +17,7 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.Property(p => p.Name).HasMaxLength(50);
             builder.Property(p => p.Description).HasMaxLength(150);
             builder.Property(p => p.Value).HasPrecision(10, 2).IsRequired();
-            builder.Property(p => p.DateInclusion).IsRequired();
+            builder.Property(p => p.DateWithdrawal).IsRequired();
             builder.Property(p => p.Priority).HasMaxLength(30);
             builder.Property(p => p.Status).HasMaxLength(30);
 
