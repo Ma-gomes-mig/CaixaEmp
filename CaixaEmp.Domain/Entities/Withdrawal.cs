@@ -34,23 +34,23 @@ namespace CaixaEmp.Domain.Entities
         }
 
         //Construtor com todas as propriedades
-        public Withdrawal(int id, string name, string description, decimal value, DateTime dateInclusion, string priority, bool status)
+        public Withdrawal(int id, string name, string description, decimal value, DateTime dateWithdrawal, string priority, bool status)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id");
             ValidateName(name);
             ValidateDescription(description);
             Value = value;
-            DateInclusion = dateInclusion;
+            DateWithdrawal = dateWithdrawal;
             Priority = priority;
             Status = status;
         }
 
         //Construtor para Update
-        public void Update(string name, string description, DateTime dateInclusion, string priority, bool status)
+        public void Update(string name, string description, DateTime dateWithdrawal, string priority, bool status)
         {
             ValidateName(name);
             Description = description;
-            DateInclusion = dateInclusion;
+            DateWithdrawal = dateWithdrawal;
             Priority = priority;
             Status = status;
         }
