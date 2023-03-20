@@ -22,7 +22,10 @@ namespace CaixaEmp.Application.DTOs
         [DisplayName("Data")]
         public DateTime Date { get; set; }
 
+        //Definição da cardinalidade 1 Balance para N Inclusion
         public ICollection<Inclusion> Inclusions { get; set; }
+
+        //Definição da cardinalidade 1 Balance para N Withdrawal
         public ICollection<Withdrawal> Withdrawals { get; set; }
 
     }
