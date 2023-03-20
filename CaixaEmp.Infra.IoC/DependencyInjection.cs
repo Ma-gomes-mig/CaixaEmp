@@ -1,4 +1,4 @@
-﻿using CaixaEmp.Domain.Interface;
+﻿using CaixaEmp.Domain.Interfaces;
 using CaixaEmp.Infra.Data.Context;
 using CaixaEmp.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;

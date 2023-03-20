@@ -1,5 +1,5 @@
 ﻿using CaixaEmp.Domain.Entities;
-using CaixaEmp.Domain.Interface;
+using CaixaEmp.Domain.Interfaces;
 using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;

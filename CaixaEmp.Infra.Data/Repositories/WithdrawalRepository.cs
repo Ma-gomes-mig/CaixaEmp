@@ -1,5 +1,5 @@
 ﻿using CaixaEmp.Domain.Entities;
-using CaixaEmp.Domain.Interface;
+using CaixaEmp.Domain.Interfaces;
 using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -56,7 +56,7 @@ namespace CaixaEmp.Infra.Data.Repositories
         public async Task<IEnumerable<Withdrawal>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
         {
             var query = from i in _withdrawalContext.Withdrawals
-                        where i.DateInclusion > beginDate && i.DateInclusion < endDate
+                        where i.DateWithdrawal > beginDate && i.DateWithdrawal < endDate
                         select i;
             foreach (var item in query)
             {

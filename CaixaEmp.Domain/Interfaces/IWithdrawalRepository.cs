@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CaixaEmp.Domain.Interface
+namespace CaixaEmp.Domain.Interfaces
 {
     public interface IWithdrawalRepository
     {
