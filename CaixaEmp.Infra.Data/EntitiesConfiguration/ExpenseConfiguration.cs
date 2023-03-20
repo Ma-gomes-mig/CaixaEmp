@@ -1,4 +1,4 @@
-﻿using CaixaEmp.Domain.Entities;
+﻿        using CaixaEmp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
