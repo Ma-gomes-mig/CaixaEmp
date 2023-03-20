@@ -10,4 +10,8 @@
     <ProjectReference Include="..\CaixaEmp.Domain\CaixaEmp.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+  </ItemGroup>
+
 </Project>
