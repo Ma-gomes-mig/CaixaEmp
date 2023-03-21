@@ -40,6 +40,6 @@ namespace CaixaEmp.Application.DTOs
         public ICollection<Withdrawal> Withdrawals { get; set; }
 
         //Definição da cardinalidade N Inclusion para 1 Expense
-        public ICollection<Inclusion> Inclusions { get; set; }       
+        public ICollection<Inclusion> Inclusions { get; set; }
     }
 }

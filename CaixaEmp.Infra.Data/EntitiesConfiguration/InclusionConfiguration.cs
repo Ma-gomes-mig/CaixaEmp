@@ -22,7 +22,7 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.Property(p => p.Status).HasMaxLength(30);
 
             builder.HasOne(e => e.Emplooyer).WithMany(e => e.Inclusions).HasForeignKey(f => f.EmplooyerId);
-            //builder.HasOne(e => e.Expense).WithMany(e => e.Inclusions).HasForeignKey(f => f.ExpenseId);
+            builder.HasOne(e => e.Expense).WithMany(e => e.Inclusions).HasForeignKey(f => f.ExpenseId);
             builder.HasOne(e => e.Balance).WithMany(e => e.Inclusions).HasForeignKey(f => f.BalanceId);
         }
     }

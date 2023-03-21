@@ -86,12 +86,15 @@ C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\CaixaEmp.WebUI
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\CaixaEmp.WebUI.pdb
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Humanizer.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
@@ -102,6 +105,8 @@ C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Iden
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
@@ -154,8 +159,3 @@ C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\obj\Debug\net7.0\refint\CaixaEm
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\obj\Debug\net7.0\CaixaEmp.WebUI.pdb
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\obj\Debug\net7.0\CaixaEmp.WebUI.genruntimeconfig.cache
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\obj\Debug\net7.0\ref\CaixaEmp.WebUI.dll
-C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Humanizer.dll
-C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.WebUI\bin\Debug\net7.0\System.CodeDom.dll
