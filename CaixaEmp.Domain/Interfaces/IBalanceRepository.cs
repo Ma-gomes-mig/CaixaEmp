@@ -10,6 +10,5 @@ namespace CaixaEmp.Domain.Interfaces
     public interface IBalanceRepository
     {
         Task<IEnumerable<Balance>> GetAllBalanceAsync();
-        Task<>
     }
 }
