@@ -57,9 +57,10 @@ namespace CaixaEmp.Domain.Entities
         public int EmplooyerId { get; set; }
         public Emplooyer Emplooyer { get; set; }
 
-        //Definição da cardinalidade N inclusion para 1 Expense
-        public int ExpenseId { get; set; }
-        public Expense Expense { get; set; }
+        //Definição da cardinalidade N inclusion para 1 Expense - Nesse caso não será necessário o Expense fazer referência no Inclusion pois é o
+        //Emplooyer que vai fazer uma inclusão.
+        //public int ExpenseId { get; set; }
+        //public Expense Expense { get; set; }
 
         //Definição da cardinalidade N Inclusion para 1 balance
         public int BalanceId { get; set; }

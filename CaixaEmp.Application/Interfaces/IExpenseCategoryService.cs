@@ -8,5 +8,6 @@ namespace CaixaEmp.Application.Interfaces
 {
     public interface IExpenseCategoryService
     {
+     
     }
 }

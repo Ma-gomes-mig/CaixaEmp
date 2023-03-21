@@ -59,9 +59,10 @@ namespace CaixaEmp.Domain.Entities
         public int EmplooyerId { get; set; }
         public Emplooyer Emplooyer { get; set; }
 
-        //Definição da cardinalidade N Withdrawal para 1 Expense
-        public int ExpenseId { get; set; }
-        public Expense Expense { get; set; }
+        //Definição da cardinalidade N Withdrawal para 1 Expense - Nesse caso não é necessário a referência do Expense no Withdrawal pois a despesa
+        //não vai fazer nenhuma retirada, quem faz a retirada é o Emplooyer.
+        //public int ExpenseId { get; set; }
+        //public Expense Expense { get; set; }
 
         //Definição da cardinalidade N Withdrawal para 1 balance
         public int BalanceId { get; set; }
