@@ -13,8 +13,8 @@ namespace CaixaEmp.Application.Interfaces
         Task<IEnumerable<EmplooyerDTO>> GetAllEmplooyerAsync();
         Task<EmplooyerDTO> GetEmplooyerByIdAsync(int? id);
         Task<EmplooyerDTO> GetEmplooyerByName(string name);
-        Task<EmplooyerDTO> Create(Emplooyer emplooyer);
-        Task<EmplooyerDTO> Update(Emplooyer emplooyer);
-        Task<EmplooyerDTO> Delete(Emplooyer emplooyer);
+        Task Create(EmplooyerDTO emplooyer);
+        Task Update(EmplooyerDTO emplooyer);
+        Task Delete(EmplooyerDTO emplooyer);
     }
 }
