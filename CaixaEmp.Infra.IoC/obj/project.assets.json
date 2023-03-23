@@ -3281,7 +3281,7 @@
       "projectName": "CaixaEmp.Infra.IoC",
       "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
       "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\obj\\",
+      "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",

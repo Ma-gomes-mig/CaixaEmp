@@ -70,7 +70,7 @@
         "projectName": "CaixaEmp.Domain",
         "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
         "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\obj\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
