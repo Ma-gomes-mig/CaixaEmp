@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CaixaEmp.Application.DTOs;
 using CaixaEmp.Application.Interfaces;
+using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -32,24 +33,28 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<EmplooyerDTO>(emplooyerEntity);
         }
 
-        public Task<EmplooyerDTO> GetEmplooyerByName(string name)
+        public async Task<EmplooyerDTO> GetEmplooyerByName(string name)
         {
-            throw new NotImplementedException();
+            var emplooyerEntity = await _emplooyerRepository.GetEmplooyerByName(name);
+            return _mapper.Map<EmplooyerDTO>(emplooyerEntity);
         }
 
-        public Task Create(EmplooyerDTO emplooyer)
+        public async Task Create(EmplooyerDTO emplooyerDto)
         {
-            throw new NotImplementedException();
+            var emplooyerEntity = _mapper.Map<Emplooyer>(emplooyerDto);
+            await _emplooyerRepository.Create(emplooyerEntity);
         }
 
-        public Task Update(EmplooyerDTO emplooyer)
+        public async Task Update(EmplooyerDTO emplooyerDto)
         {
-            throw new NotImplementedException();
+            var emplooyerEntity = _mapper.Map<Emplooyer>(emplooyerDto);
+            await _emplooyerRepository.Update(emplooyerEntity);
         }
 
-        public Task Delete(EmplooyerDTO emplooyer)
+        public async Task Delete(EmplooyerDTO emplooyerDto)
         {
-            throw new NotImplementedException();
+            var emplooyerEntity = _mapper.Map<Emplooyer>(emplooyerDto);
+            await _emplooyerRepository.Delete(emplooyerEntity);
         }
     }
 }
