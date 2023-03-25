@@ -30,12 +30,11 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(categoryEntity);
         }
 
-        public async Task<IEnumerable<ExpenseCategoryDTO>> GetCategoryByExpense(int expenseId)
-        {
-            var categoryEntity = _mapper.Map<ExpenseCategory>(expenseId);
-            await _context.Categories.Where(c => c.Id == expenseId).ToListAsync();
-            return 
-        }
+        //public async Task<IEnumerable<ExpenseCategoryDTO>> GetCategoryByExpense(int expenseId)
+        //{
+        //    var categoryEntiy = await _expenseCategoryRepository.GetCategoryByExpense(expenseId);
+        //    return _mapper.Map<>
+        //}
 
         public async Task<ExpenseCategoryDTO> GetCategoryByIdAsync(int? Id)
         {
@@ -43,19 +42,22 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<ExpenseCategoryDTO>(categoryEntity);
         }
 
-        public Task Create(ExpenseCategoryDTO expenseCategory)
+        public async Task Create(ExpenseCategoryDTO expenseCategory)
         {
-            throw new NotImplementedException();
+            var category = _mapper.Map<ExpenseCategory>(expenseCategory);
+            await _expenseCategoryRepository.Create(category);
         }
 
-        public Task Update(ExpenseCategoryDTO expenseCategory)
+        public async Task Update(ExpenseCategoryDTO expenseCategory)
         {
-            throw new NotImplementedException();
+            var category = _mapper.Map<ExpenseCategory>(expenseCategory);
+            await _expenseCategoryRepository.Update(category);
         }
 
-        public Task Delete(ExpenseCategoryDTO expenseCategory)
+        public async Task Delete(ExpenseCategoryDTO expenseCategory)
         {
-            throw new NotImplementedException();
+            var category = _mapper.Map<ExpenseCategory>(expenseCategory);
+            await _expenseCategoryRepository.Delete(category);
         }
     }
 }
