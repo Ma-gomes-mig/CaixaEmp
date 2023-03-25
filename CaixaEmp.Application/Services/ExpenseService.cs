@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CaixaEmp.Application.DTOs;
 using CaixaEmp.Application.Interfaces;
+using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interfaces;
 using CaixaEmp.Infra.Data.Repositories;
 using System;
@@ -43,9 +44,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<ExpenseDTO>(entity);
         }
 
-        public Task Create(ExpenseDTO expense)
+        public async Task Create(ExpenseDTO expense)
         {
-            throw new NotImplementedException();
+            var expenseEntity = _mapper.Map<Expense>(expense);
+            await _expenseRepository.Create(expenseEntity);
         }
 
         public Task Update(ExpenseDTO expense)
