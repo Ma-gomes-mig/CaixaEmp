@@ -56,9 +56,10 @@ namespace CaixaEmp.Application.Services
             await _expenseRepository.Update(expenseEntity);
         }
 
-        public Task Delete(ExpenseDTO expense)
+        public async Task Delete(ExpenseDTO expense)
         {
-            throw new NotImplementedException();
+            var expenseEntity = _mapper.Map<Expense>(expense);
+            await _expenseRepository.Delete(expenseEntity);
         }
     }
 }
