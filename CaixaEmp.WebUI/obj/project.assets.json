@@ -1154,7 +1154,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "CaixaEmp.Domain": "1.0.0"
+          "CaixaEmp.Domain": "1.0.0",
+          "CaixaEmp.Infra.Data": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CaixaEmp.Application.dll": {}

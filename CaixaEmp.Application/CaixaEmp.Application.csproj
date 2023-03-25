@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CaixaEmp.Domain\CaixaEmp.Domain.csproj" />
+    <ProjectReference Include="..\CaixaEmp.Infra.Data\CaixaEmp.Infra.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
