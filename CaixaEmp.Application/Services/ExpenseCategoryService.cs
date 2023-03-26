@@ -30,11 +30,11 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(categoryEntity);
         }
 
-        //public async Task<IEnumerable<ExpenseCategoryDTO>> GetCategoryByExpense(int expenseId)
-        //{
-        //    var categoryEntiy = await _expenseCategoryRepository.GetCategoryByExpense(expenseId);
-        //    return _mapper.Map<>
-        //}
+        public async Task<IEnumerable<ExpenseCategoryDTO>> GetCategoryByExpense(int expenseId)
+        {
+            var category = await _expenseCategoryRepository.GetCategoryByExpense(expenseId);
+            return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(category);
+        }
 
         public async Task<ExpenseCategoryDTO> GetCategoryByIdAsync(int? Id)
         {
