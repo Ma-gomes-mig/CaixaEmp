@@ -28,9 +28,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<ExpenseDTO>>(expense);
         }
 
-        public Task<ExpenseDTO> GetExpenseById(int? id)
+        public async Task<ExpenseDTO> GetExpenseById(int? id)
         {
-            throw new NotImplementedException();
+            var expense = await _expenseRepository.GetExpenseById(id);
+            return _mapper.Map<ExpenseDTO>(expense);
         }
 
         public async Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id)
