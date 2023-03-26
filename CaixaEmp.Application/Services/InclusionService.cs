@@ -26,9 +26,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion);    
         }
 
-        public Task<InclusionDTO> GetInclusionById(int? id)
+        public async Task<InclusionDTO> GetInclusionById(int? id)
         {
-            throw new NotImplementedException();
+            var inclusion = await _inclusionRepository.GetInclusionById(id);
+                return _mapper.Map<InclusionDTO>(inclusion);
         }
 
         public Task<IEnumerable<InclusionDTO>> GetInclusionByExpense(int expenseId)
