@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CaixaEmp.Application.DTOs;
 using CaixaEmp.Application.Interfaces;
+using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -68,19 +69,22 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion);
         }
 
-        public Task Create(InclusionDTO inclusion)
+        public async Task Create(InclusionDTO inclusion)
         {
-            throw new NotImplementedException();
+            var inclusionEntity = _mapper.Map<Inclusion>(inclusion);
+            await _inclusionRepository.Create(inclusionEntity);
         }
 
-        public Task Update(InclusionDTO inclusion)
+        public async Task Update(InclusionDTO inclusion)
         {
-            throw new NotImplementedException();
+            var inclusionEntity = _mapper.Map<Inclusion>(inclusion);
+            await _inclusionRepository.Update(inclusionEntity);
         }
 
-        public Task Delete(InclusionDTO inclusion)
+        public async Task Delete(InclusionDTO inclusion)
         {
-            throw new NotImplementedException();
+            var inclusionEntity = _mapper.Map<Inclusion>(inclusion);
+            await _inclusionRepository.Delete(inclusionEntity);
         }
     }
 }
