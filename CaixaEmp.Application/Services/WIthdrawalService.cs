@@ -45,9 +45,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
-        public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
+        public async Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
         {
-            throw new NotImplementedException();
+            var withdrawal = await _withdrawalRepository.GetWithdrawalByPeriod(beginDate, endDate);
+            return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
         public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByPriority(string priority)
