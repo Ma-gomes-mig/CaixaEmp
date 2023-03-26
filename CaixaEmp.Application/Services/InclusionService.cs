@@ -50,9 +50,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion);
         }
 
-        public Task<IEnumerable<InclusionDTO>> GetInclusionByPriority(string priority)
+        public async Task<IEnumerable<InclusionDTO>> GetInclusionByPriority(string priority)
         {
-            throw new NotImplementedException();
+            var inclusion = await _inclusionRepository.GetInclusionByPriority(priority);
+            return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion); 
         }
 
         public Task<IEnumerable<InclusionDTO>> GetInclusionAproved(bool status)
