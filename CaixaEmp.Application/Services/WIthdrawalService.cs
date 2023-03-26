@@ -3,6 +3,7 @@ using CaixaEmp.Application.DTOs;
 using CaixaEmp.Application.Interfaces;
 using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,19 +70,22 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
-        public Task Create(WithdrawalDTO withdrawal)
+        public async Task Create(WithdrawalDTO withdrawal)
         {
-            throw new NotImplementedException();
+            var withdrawalEntity = _mapper.Map<Withdrawal>(withdrawal);
+            await _withdrawalRepository.Create(withdrawalEntity);
         }
 
-        public Task Update(WithdrawalDTO withdrawal)
+        public async Task Update(WithdrawalDTO withdrawal)
         {
-            throw new NotImplementedException();
+            var withdrawalEntity = _mapper.Map<Withdrawal>(withdrawal);
+            await _withdrawalRepository.Update(withdrawalEntity);
         }
 
-        public Task Delete(WithdrawalDTO withdrawal)
+        public async Task Delete(WithdrawalDTO withdrawal)
         {
-            throw new NotImplementedException();
+            var withdrawalEntity = _mapper.Map<Withdrawal>(withdrawal);
+            await _withdrawalRepository.Delete(withdrawalEntity);
         }
 
         
