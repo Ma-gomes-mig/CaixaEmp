@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CaixaEmp.Application.DTOs;
 using CaixaEmp.Application.Interfaces;
+using CaixaEmp.Domain.Entities;
 using CaixaEmp.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -38,9 +39,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
-        public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByEmplooyer(int emplooyerId)
+        public async Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByEmplooyer(int emplooyerId)
         {
-            throw new NotImplementedException();
+            var withdrawal = await _withdrawalRepository.GetWithdrawalByEmplooyer(emplooyerId);
+            return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
         public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByPeriod(DateTime beginDate, DateTime endDate)
