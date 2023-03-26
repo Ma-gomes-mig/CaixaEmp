@@ -32,9 +32,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<WithdrawalDTO>(withdrawal);
         }
 
-        public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByExpense(int expenseId)
+        public async Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByExpense(int expenseId)
         {
-            throw new NotImplementedException();
+            var withdrawal = await _withdrawalRepository.GetWithdrawalByExpense(expenseId);
+            return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
         public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByEmplooyer(int emplooyerId)
