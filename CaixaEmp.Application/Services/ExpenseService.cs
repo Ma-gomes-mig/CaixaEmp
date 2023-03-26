@@ -33,9 +33,10 @@ namespace CaixaEmp.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id)
+        public async Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id)
         {
-            throw new NotImplementedException();
+            var entity = await _expenseRepository.GetExpenseByEmplooyer(id);
+            return _mapper.Map<IEnumerable<ExpenseDTO>>(entity);
         }
 
         public async Task<ExpenseDTO> GetExpenseCategory(int? id)
