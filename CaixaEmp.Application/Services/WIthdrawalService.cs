@@ -57,14 +57,16 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
-        public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalAproved(bool status)
+        public async Task<IEnumerable<WithdrawalDTO>> GetWithdrawalAproved(bool status)
         {
-            throw new NotImplementedException();
+            var withdrawal = await _withdrawalRepository.GetWithdrawalAproved(status);
+            return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
-        public Task<IEnumerable<WithdrawalDTO>> GetInclusionReproved(bool status)
+        public async Task<IEnumerable<WithdrawalDTO>> GetWithdrawalReproved(bool status)
         {
-            throw new NotImplementedException();
+            var withdrawal = await _withdrawalRepository.GetInclusionReproved(status);
+            return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
         public Task Create(WithdrawalDTO withdrawal)
@@ -81,5 +83,7 @@ namespace CaixaEmp.Application.Services
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }
