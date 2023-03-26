@@ -51,9 +51,10 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
-        public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByPriority(string priority)
+        public async Task<IEnumerable<WithdrawalDTO>> GetWithdrawalByPriority(string priority)
         {
-            throw new NotImplementedException();
+            var withdrawal = await _withdrawalRepository.GetWithdrawalByPriority(priority);
+            return _mapper.Map<IEnumerable<WithdrawalDTO>>(withdrawal);
         }
 
         public Task<IEnumerable<WithdrawalDTO>> GetWithdrawalAproved(bool status)
