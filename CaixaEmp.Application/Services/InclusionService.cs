@@ -56,14 +56,16 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion); 
         }
 
-        public Task<IEnumerable<InclusionDTO>> GetInclusionAproved(bool status)
+        public async Task<IEnumerable<InclusionDTO>> GetInclusionAproved(bool status)
         {
-            throw new NotImplementedException();
+            var inclusion = await _inclusionRepository.GetInclusionAproved(status);
+            return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion);
         }
 
-        public Task<IEnumerable<InclusionDTO>> GetInclusionReproved(bool status)
+        public async Task<IEnumerable<InclusionDTO>> GetInclusionReproved(bool status)
         {
-            throw new NotImplementedException();
+            var inclusion = await _inclusionRepository.GetInclusionReproved(status);
+            return _mapper.Map<IEnumerable<InclusionDTO>>(inclusion);
         }
 
         public Task Create(InclusionDTO inclusion)
