@@ -1,5 +1,10 @@
-﻿using CaixaEmp.Domain.Interfaces;
+﻿using CaixaEmp.Application.Interfaces;
+using CaixaEmp.Application.Mappings;
+using CaixaEmp.Application.Services;
+using CaixaEmp.Domain.Interfaces;
+using CaixaEmp.Domain.Validation;
 using CaixaEmp.Infra.Data.Context;
+using AutoMapper;
 using CaixaEmp.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +31,15 @@ namespace CaixaEmp.Infra.IoC
             services.AddScoped<IInclusionRepository, InclusionRepository>();
             services.AddScoped<IWithdrawalRepository, WithdrawalRepository>();
             services.AddScoped<IBalanceRepository, BalanceRespository>();
+
+            services.AddScoped<IEmplooyerService, EmplooyerService>();
+            services.AddScoped<IExpenseCategoryService, ExpenseCategoryService>();
+            services.AddScoped<IExpenseService, ExpenseService>();
+            services.AddScoped<IInclusionService, InclusionService>();
+            services.AddScoped<IWithdrawalService, WithdrawalService>();
+            services.AddScoped<IBalanceService, BalanceService>();
+
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
 
             return services;
