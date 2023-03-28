@@ -31,7 +31,8 @@ namespace CaixaEmp.Infra.Data.Repositories
 
         public async Task<Emplooyer> GetEmplooyerByName(string name)
         {
-            return await _emplooyerContext.Emplooyers.FindAsync(name);
+            //return await _emplooyerContext.Emplooyers.FindAsync(name);
+            return await _emplooyerContext.Emplooyers.Where(e => e.Name.Contains(name)).FirstAsync();
         }
 
         public async Task<Emplooyer> Create(Emplooyer emplooyer)

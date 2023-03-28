@@ -1,9 +1,13 @@
+using CaixaEmp.Infra.Data.Context;
 using CaixaEmp.Infra.IoC;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddDbContext<ApplicationDbContext>(option =>
+//option.UseSqlServer(builder.Configuration.GetConnectionString("DeaultConnection")));
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();

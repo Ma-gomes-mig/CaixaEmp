@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaixaEmp.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230323024638_Initial")]
+    [Migration("20230327235011_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
