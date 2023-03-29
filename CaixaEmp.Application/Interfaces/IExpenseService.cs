@@ -14,6 +14,7 @@ namespace CaixaEmp.Application.Interfaces
         Task<ExpenseDTO> GetExpenseById(int? id);
         Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id);
         Task<ExpenseDTO> GetExpenseCategory(int? id);
+        Task<ExpenseDTO> GetExpenseEmplooyer(int? id);
 
         Task Create(ExpenseDTO expense);
         Task Update(ExpenseDTO expense);

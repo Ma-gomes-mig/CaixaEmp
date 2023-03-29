@@ -36,14 +36,20 @@ namespace CaixaEmp.Application.Services
 
         public async Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id)
         {
-            var entity = await _expenseRepository.GetExpenseByEmplooyer(id);
-            return _mapper.Map<IEnumerable<ExpenseDTO>>(entity);
+            var expense = await _expenseRepository.GetExpenseByEmplooyer(id);
+            return _mapper.Map<IEnumerable<ExpenseDTO>>(expense);
         }
+        public async Task<ExpenseDTO> GetExpenseEmplooyer(int? id)
+        {
+            var expense = await _expenseRepository.GetExpenseEmplooyer(id);
+            return _mapper.Map<ExpenseDTO>(expense);
+        }
+        
 
         public async Task<ExpenseDTO> GetExpenseCategory(int? id)
         {
-            var entity = await _expenseRepository.GetExpenseCategory(id);
-            return _mapper.Map<ExpenseDTO>(entity);
+            var expense = await _expenseRepository.GetExpenseCategory(id);
+            return _mapper.Map<ExpenseDTO>(expense);
         }
 
         public async Task Create(ExpenseDTO expense)
@@ -63,5 +69,7 @@ namespace CaixaEmp.Application.Services
             var expenseEntity = _mapper.Map<Expense>(expense);
             await _expenseRepository.Delete(expenseEntity);
         }
+
+        
     }
 }
