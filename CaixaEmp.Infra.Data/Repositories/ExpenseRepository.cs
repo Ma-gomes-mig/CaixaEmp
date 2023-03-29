@@ -34,6 +34,11 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _expenseContext.Expenses.Where(e => e.EmplooyerId == id).ToListAsync();
         }
 
+        public async Task<Expense> GetExpenseEmplooyer(int? id)
+        {
+            return await _expenseContext.Expenses.Include(e => e.Emplooyer).SingleOrDefaultAsync(p => p.EmplooyerId == id);
+        }
+
         public async Task<Expense> GetExpenseCategory(int? id)
         {
             return await _expenseContext.Expenses.Include(c => c.ExpenseCategory).SingleOrDefaultAsync(p => p.ExpenseCategoryId == id);

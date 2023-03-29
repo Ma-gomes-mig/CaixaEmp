@@ -13,6 +13,7 @@ namespace CaixaEmp.Domain.Interfaces
         Task<Expense> GetExpenseById(int? id);
         Task<IEnumerable<Expense>> GetExpenseByEmplooyer(int id);
         Task<Expense> GetExpenseCategory(int? id);
+        Task<Expense> GetExpenseEmplooyer(int? id);
 
         Task<Expense> Create(Expense expense);
         Task<Expense> Update(Expense expense);
