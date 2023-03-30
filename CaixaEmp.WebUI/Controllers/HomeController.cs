@@ -1,4 +1,5 @@
-﻿using CaixaEmp.WebUI.Models;
+﻿using CaixaEmp.Application.Interfaces;
+using CaixaEmp.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,27 +7,17 @@ namespace CaixaEmp.WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private IExpenseService _expenseService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IExpenseService expenseService)
         {
-            _logger = logger;
+            _expenseService = expenseService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+            var expense = await _expenseService.GetExpenseEmplooyer(id);
+            return View(expense);
+        }        
     }
 }
