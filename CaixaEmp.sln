@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.Domain", "CaixaEmp.Domain\CaixaEmp.Domain.csproj", "{A4159673-AD2E-4CF3-9951-0C548CB49702}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaixaEmp.Domain", "CaixaEmp.Domain\CaixaEmp.Domain.csproj", "{A4159673-AD2E-4CF3-9951-0C548CB49702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.Application", "CaixaEmp.Application\CaixaEmp.Application.csproj", "{EA27055B-5482-4758-A675-7AAEA53A2629}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaixaEmp.Application", "CaixaEmp.Application\CaixaEmp.Application.csproj", "{EA27055B-5482-4758-A675-7AAEA53A2629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.Infra.Data", "CaixaEmp.Infra.Data\CaixaEmp.Infra.Data.csproj", "{1010C2E3-D475-4827-9BBA-FDF9D2DC17C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaixaEmp.Infra.Data", "CaixaEmp.Infra.Data\CaixaEmp.Infra.Data.csproj", "{1010C2E3-D475-4827-9BBA-FDF9D2DC17C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.Infra.IoC", "CaixaEmp.Infra.IoC\CaixaEmp.Infra.IoC.csproj", "{25A4BDDE-0629-4FA0-8F23-D929238A9518}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaixaEmp.Infra.IoC", "CaixaEmp.Infra.IoC\CaixaEmp.Infra.IoC.csproj", "{25A4BDDE-0629-4FA0-8F23-D929238A9518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.WebUI", "CaixaEmp.WebUI\CaixaEmp.WebUI.csproj", "{3A237FF8-26A6-4905-A7D6-12BE72A0287D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaixaEmp.DomainTest", "CaixaEmp.DomainTest\CaixaEmp.DomainTest.csproj", "{18605B20-5A75-4887-A974-4308390C410D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEmp.DomainTest", "CaixaEmp.DomainTest\CaixaEmp.DomainTest.csproj", "{18605B20-5A75-4887-A974-4308390C410D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaixaEmp.WebAPI", "CaixaEmp.WebAPI\CaixaEmp.WebAPI.csproj", "{A2E5F9D1-1D5A-441E-BC83-B25D406F93BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +37,14 @@ Global
 		{25A4BDDE-0629-4FA0-8F23-D929238A9518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25A4BDDE-0629-4FA0-8F23-D929238A9518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25A4BDDE-0629-4FA0-8F23-D929238A9518}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A237FF8-26A6-4905-A7D6-12BE72A0287D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{18605B20-5A75-4887-A974-4308390C410D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{18605B20-5A75-4887-A974-4308390C410D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18605B20-5A75-4887-A974-4308390C410D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18605B20-5A75-4887-A974-4308390C410D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E5F9D1-1D5A-441E-BC83-B25D406F93BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E5F9D1-1D5A-441E-BC83-B25D406F93BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E5F9D1-1D5A-441E-BC83-B25D406F93BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E5F9D1-1D5A-441E-BC83-B25D406F93BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
