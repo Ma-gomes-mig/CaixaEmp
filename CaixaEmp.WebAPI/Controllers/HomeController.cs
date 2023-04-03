@@ -17,12 +17,12 @@ namespace CaixaEmp.WebAPI.Controllers
             _expenseService = expenseService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IAsyncEnumerable<Expense>>> GetExpense()
+        [HttpGet("ExpenseEmplooyer")]
+        public ActionResult<IAsyncEnumerable<Expense>> GetExpenseEmplooyer()
         {
             try
             {
-                var expense = await _expenseService.GetAllExpenseAsync();
+                var expense =  _expenseService.GetExpenseEmplooyer;
                 return Ok(expense);
             }
             catch
@@ -30,5 +30,6 @@ namespace CaixaEmp.WebAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Erro ao obter as despesas");
             }
         }
+        
     }
 }

@@ -22,9 +22,11 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.HasOne(e => e.Emplooyer).WithMany(e => e.Expenses).HasForeignKey(f => f.EmplooyerId);
             builder.HasOne(e => e.ExpenseCategory).WithMany(e => e.Expenses).HasForeignKey(f => f.ExpenseCategoryId);
 
-            //builder.HasData(
-            //    new Expense(1, "Compra Agua", "Dinheiro destinado a compra do galão de agua", 30, "Média",1,1),
-            //    new Expense());
+            builder.HasData(
+                new Expense(1, "Compra objeto Higiêne", "Dinheiro destinado a compra do galão de agua", 30, "Média", 1, 1),
+                new Expense(2, "Compra objeto papelaria", "Dinheiro destinado a compra de material de escritório", 40, "Média", 2, 2),
+                new Expense(3, "Compra alimentos", "Dinheiro destinado a compra de alimentos", 50, "Média", 3, 3),
+                new Expense(4, "Compra objeto saude", "Dinheiro destinado a compra de material de saude", 60, "Média", 4, 4));
         }
     }
 }

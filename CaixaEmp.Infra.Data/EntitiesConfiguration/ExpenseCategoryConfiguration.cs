@@ -19,15 +19,15 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
 
             builder.HasMany(e => e.Expenses).WithOne(e => e.ExpenseCategory).HasForeignKey(f => f.ExpenseCategoryId);
 
-            //builder.HasData(
-            //    new ExpenseCategory(1, "Insumos Higiene", "Todo material que seja para uso da higiene da area de trabalho como: " +
-            //    "Esponja, detergente, papel higiênico, etc..."),
-            //    new ExpenseCategory(2, "Insumos Papelaria", "Todo material que seja para uso do escritório como:" +
-            //    "Fita adesiva, lápis, grampos, papel para impressão, etc..."),
-            //    new ExpenseCategory(3, "Insumos Alimentares", "Todo material que seja para uso dos colaboradores como: " +
-            //    "Biscoito, agua, etc"),
-            //    new ExpenseCategory(4, "Insumos Saude", "Todo material que seja para uso dos colaboradores como: " +
-            //    "Remedio, band-aid"));
+            builder.HasData(
+                new ExpenseCategory(1, "Insumos Higiene", "Todo material que seja para uso da higiene da area de trabalho como: " +
+                "Esponja, detergente, papel higiênico, etc..."),
+                new ExpenseCategory(2, "Insumos Papelaria", "Todo material que seja para uso do escritório como:" +
+                "Fita adesiva, lápis, grampos, papel para impressão, etc..."),
+                new ExpenseCategory(3, "Insumos Alimentares", "Todo material que seja para uso dos colaboradores como: " +
+                "Biscoito, agua, etc"),
+                new ExpenseCategory(4, "Insumos Saude", "Todo material que seja para uso dos colaboradores como: " +
+                "Remedio, band-aid"));
         }
     }
 }
