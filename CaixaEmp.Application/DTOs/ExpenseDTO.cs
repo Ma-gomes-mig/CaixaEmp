@@ -23,6 +23,7 @@ namespace CaixaEmp.Application.DTOs
         [DisplayName("Descrição")]
         public string Description { get; set; }
 
+        
        public decimal Value { get; set; }
         [Required]
         [StringLength(30)]
