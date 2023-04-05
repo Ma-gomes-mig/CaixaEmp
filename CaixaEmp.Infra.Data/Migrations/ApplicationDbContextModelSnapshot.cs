@@ -39,7 +39,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Balances");
+                    b.ToTable("Balances", (string)null);
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Emplooyer", b =>
@@ -62,7 +62,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Emplooyers");
+                    b.ToTable("Emplooyers", (string)null);
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Expense", b =>
@@ -109,7 +109,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasIndex("MonthId");
 
-                    b.ToTable("Expenses");
+                    b.ToTable("Expenses", (string)null);
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.ExpenseCategory", b =>
@@ -132,7 +132,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Inclusion", b =>
@@ -182,7 +182,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasIndex("ExpenseId");
 
-                    b.ToTable("Inclusions");
+                    b.ToTable("Inclusions", (string)null);
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Month", b =>
@@ -200,7 +200,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Months");
+                    b.ToTable("Months", (string)null);
 
                     b.HasData(
                         new
@@ -313,7 +313,7 @@ namespace CaixaEmp.Infra.Data.Migrations
 
                     b.HasIndex("ExpenseId");
 
-                    b.ToTable("Withdrawals");
+                    b.ToTable("Withdrawals", (string)null);
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Expense", b =>

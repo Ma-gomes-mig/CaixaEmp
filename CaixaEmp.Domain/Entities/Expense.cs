@@ -22,7 +22,8 @@ namespace CaixaEmp.Domain.Entities
         //Construtor com todos os atributos
         public Expense(int id, string name, string description, decimal value, string priority, int emplooyerId, int expenseCategoryId)
         {
-            DomainExceptionValidation.When(id < 0, "Invalid Id");
+            //DomainExceptionValidation.When(id < 0, "Invalid Id");
+            Id = id;
             ValidateName(name);
             ValidateDescription(description);
             Value = value;
