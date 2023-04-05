@@ -19,6 +19,7 @@ namespace CaixaEmp.Application.Mappings
             CreateMap<Expense, ExpenseCategoryDTO>().ReverseMap();
             CreateMap<Inclusion, InclusionDTO>().ReverseMap();
             CreateMap<Withdrawal, WithdrawalDTO>().ReverseMap();
+            CreateMap<Month, MonthDTO>().ReverseMap();
 
         }
     }
