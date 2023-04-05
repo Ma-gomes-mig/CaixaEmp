@@ -10,6 +10,6 @@ namespace CaixaEmp.Application.Interfaces
 {
     public interface IBalanceService
     {
-        Task<IEnumerable<BalanceDTO>> GetAllBalanceAsync();
+        //Task<IEnumerable<BalanceDTO>> GetAllBalanceAsync();
     }
 }

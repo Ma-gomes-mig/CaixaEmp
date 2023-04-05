@@ -4,6 +4,7 @@ using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaixaEmp.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230405001006_TabelaMonth")]
+    partial class TabelaMonth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -201,68 +204,6 @@ namespace CaixaEmp.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Months");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Janeiro"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Fevereiro"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Março"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Abril"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Maio"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Name = "Junho"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Name = "Julho"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Name = "Agosto"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Name = "Setembro"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Name = "Outubro"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Name = "Novembro"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Name = "Dezembro"
-                        });
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Withdrawal", b =>

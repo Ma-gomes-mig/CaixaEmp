@@ -23,15 +23,15 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _expenseCategoryContext.Categories.ToListAsync();
         }
 
-        public async Task<IEnumerable<ExpenseCategory>> GetCategoryByExpense(int expenseId)
-        {
-            return await _expenseCategoryContext.Categories.Where(c => c.Id == expenseId).ToListAsync();
-        }
+        //public async Task<IEnumerable<ExpenseCategory>> GetCategoryByExpense(int expenseId)
+        //{
+        //    return await _expenseCategoryContext.Categories.Where(c => c.Id == expenseId).ToListAsync();
+        //}
 
-        public async Task<ExpenseCategory> GetCategoryByIdAsync(int? Id)
-        {
-            return await _expenseCategoryContext.Categories.FindAsync(Id);
-        }
+        //public async Task<ExpenseCategory> GetCategoryByIdAsync(int? Id)
+        //{
+        //    return await _expenseCategoryContext.Categories.FindAsync(Id);
+        //}
 
         public async Task<ExpenseCategory> Create(ExpenseCategory expenseCategory)
         {

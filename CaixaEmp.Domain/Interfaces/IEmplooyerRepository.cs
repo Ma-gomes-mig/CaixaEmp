@@ -10,8 +10,8 @@ namespace CaixaEmp.Domain.Interfaces
     public interface IEmplooyerRepository
     {
         Task<IEnumerable<Emplooyer>> GetAllEmplooyerAsync();
-        Task<Emplooyer> GetEmplooyerByIdAsync(int? id);
-        Task<Emplooyer> GetEmplooyerByName(string name);
+        //Task<Emplooyer> GetEmplooyerByIdAsync(int? id);
+        //Task<Emplooyer> GetEmplooyerByName(string name);
         Task<Emplooyer> Create(Emplooyer emplooyer);
         Task<Emplooyer> Update(Emplooyer emplooyer);
         Task<Emplooyer> Delete(Emplooyer emplooyer);

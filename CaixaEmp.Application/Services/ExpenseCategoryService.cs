@@ -18,29 +18,29 @@ namespace CaixaEmp.Application.Services
         ApplicationDbContext _context;
         private IExpenseCategoryRepository _expenseCategoryRepository;
         private readonly IMapper _mapper;
-        public ExpenseCategoryService(IExpenseCategoryRepository expenseRepository, IMapper mapper)
-        {
-            _expenseCategoryRepository = expenseRepository;
-            _mapper = mapper;
-        }
+        //public ExpenseCategoryService(IExpenseCategoryRepository expenseRepository, IMapper mapper)
+        //{
+        //    _expenseCategoryRepository = expenseRepository;
+        //    _mapper = mapper;
+        //}
 
-        public async Task<IEnumerable<ExpenseCategoryDTO>> GetAllCategoryAsync()
-        {
-            var categoryEntity = await _expenseCategoryRepository.GetAllCategoryAsync();
-            return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(categoryEntity);
-        }
+        //public async Task<IEnumerable<ExpenseCategoryDTO>> GetAllCategoryAsync()
+        //{
+        //    var categoryEntity = await _expenseCategoryRepository.GetAllCategoryAsync();
+        //    return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(categoryEntity);
+        //}
 
-        public async Task<IEnumerable<ExpenseCategoryDTO>> GetCategoryByExpense(int expenseId)
-        {
-            var category = await _expenseCategoryRepository.GetCategoryByExpense(expenseId);
-            return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(category);
-        }
+        //public async Task<IEnumerable<ExpenseCategoryDTO>> GetCategoryByExpense(int expenseId)
+        //{
+        //    var category = await _expenseCategoryRepository.GetCategoryByExpense(expenseId);
+        //    return _mapper.Map<IEnumerable<ExpenseCategoryDTO>>(category);
+        //}
 
-        public async Task<ExpenseCategoryDTO> GetCategoryByIdAsync(int? Id)
-        {
-            var categoryEntity = await _expenseCategoryRepository.GetCategoryByIdAsync(Id);
-            return _mapper.Map<ExpenseCategoryDTO>(categoryEntity);
-        }
+        //public async Task<ExpenseCategoryDTO> GetCategoryByIdAsync(int? Id)
+        //{
+        //    var categoryEntity = await _expenseCategoryRepository.GetCategoryByIdAsync(Id);
+        //    return _mapper.Map<ExpenseCategoryDTO>(categoryEntity);
+        //}
 
         public async Task Create(ExpenseCategoryDTO expenseCategory)
         {

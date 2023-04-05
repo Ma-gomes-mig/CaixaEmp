@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace CaixaEmp.Domain.Interfaces
 {
-    public interface IBalanceRepository
+    public interface IMonthRepository
     {
-        //Task<IEnumerable<Balance>> GetAllBalanceAsync();
+        Task<IEnumerable<Month>> GetAllMonthAsync();
+        Task<Month> GetMothByIdAsync(int? id);
     }
 }

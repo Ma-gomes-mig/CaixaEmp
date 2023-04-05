@@ -10,8 +10,8 @@ namespace CaixaEmp.Domain.Interfaces
     public interface IExpenseCategoryRepository
     {
         Task<IEnumerable<ExpenseCategory>> GetAllCategoryAsync();
-        Task<IEnumerable<ExpenseCategory>> GetCategoryByExpense(int expenseId);
-        Task<ExpenseCategory> GetCategoryByIdAsync(int? Id);
+        //Task<IEnumerable<ExpenseCategory>> GetCategoryByExpense(int expenseId);
+        //Task<ExpenseCategory> GetCategoryByIdAsync(int? Id);
         Task<ExpenseCategory> Create(ExpenseCategory expenseCategory);
         Task<ExpenseCategory> Update(ExpenseCategory expenseCategory);
         Task<ExpenseCategory> Delete(ExpenseCategory expenseCategory);

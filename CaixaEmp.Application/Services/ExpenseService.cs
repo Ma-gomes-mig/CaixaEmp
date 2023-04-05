@@ -28,29 +28,29 @@ namespace CaixaEmp.Application.Services
             return _mapper.Map<IEnumerable<ExpenseDTO>>(expense);
         }
 
-        public async Task<ExpenseDTO> GetExpenseById(int? id)
-        {
-            var expense = await _expenseRepository.GetExpenseById(id);
-            return _mapper.Map<ExpenseDTO>(expense);
-        }
+        //public async Task<ExpenseDTO> GetExpenseById(int? id)
+        //{
+        //    var expense = await _expenseRepository.GetExpenseById(id);
+        //    return _mapper.Map<ExpenseDTO>(expense);
+        //}
 
-        public async Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id)
-        {
-            var expense = await _expenseRepository.GetExpenseByEmplooyer(id);
-            return _mapper.Map<IEnumerable<ExpenseDTO>>(expense);
-        }
-        public async Task<ExpenseDTO> GetExpenseEmplooyer(int? id)
-        {
-            var expense = await _expenseRepository.GetExpenseEmplooyer(id);
-            return _mapper.Map<ExpenseDTO>(expense);
-        }
-        
+        //public async Task<IEnumerable<ExpenseDTO>> GetExpenseByEmplooyer(int id)
+        //{
+        //    var expense = await _expenseRepository.GetExpenseByEmplooyer(id);
+        //    return _mapper.Map<IEnumerable<ExpenseDTO>>(expense);
+        //}
+        //public async Task<ExpenseDTO> GetExpenseEmplooyer(int? id)
+        //{
+        //    var expense = await _expenseRepository.GetExpenseEmplooyer(id);
+        //    return _mapper.Map<ExpenseDTO>(expense);
+        //}
 
-        public async Task<ExpenseDTO> GetExpenseCategory(int? id)
-        {
-            var expense = await _expenseRepository.GetExpenseCategory(id);
-            return _mapper.Map<ExpenseDTO>(expense);
-        }
+
+        //public async Task<ExpenseDTO> GetExpenseCategory(int? id)
+        //{
+        //    var expense = await _expenseRepository.GetExpenseCategory(id);
+        //    return _mapper.Map<ExpenseDTO>(expense);
+        //}
 
         public async Task Create(ExpenseDTO expense)
         {

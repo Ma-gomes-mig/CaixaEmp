@@ -24,16 +24,16 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _emplooyerContext.Emplooyers.ToListAsync();
         }
 
-        public async Task<Emplooyer> GetEmplooyerByIdAsync(int? id)
-        {
-            return await _emplooyerContext.Emplooyers.FindAsync(id);
-        }
+        //public async Task<Emplooyer> GetEmplooyerByIdAsync(int? id)
+        //{
+        //    return await _emplooyerContext.Emplooyers.FindAsync(id);
+        //}
 
-        public async Task<Emplooyer> GetEmplooyerByName(string name)
-        {
-            //return await _emplooyerContext.Emplooyers.FindAsync(name);
-            return await _emplooyerContext.Emplooyers.Where(e => e.Name.Contains(name)).FirstAsync();
-        }
+        //public async Task<Emplooyer> GetEmplooyerByName(string name)
+        //{
+        //    //return await _emplooyerContext.Emplooyers.FindAsync(name);
+        //    return await _emplooyerContext.Emplooyers.Where(e => e.Name.Contains(name)).FirstAsync();
+        //}
 
         public async Task<Emplooyer> Create(Emplooyer emplooyer)
         {

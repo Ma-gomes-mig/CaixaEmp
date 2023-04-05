@@ -21,23 +21,23 @@ namespace CaixaEmp.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<EmplooyerDTO>> GetAllEmplooyerAsync()
-        {
-            var emplooyerEntity = await _emplooyerRepository.GetAllEmplooyerAsync();
-            return _mapper.Map<IEnumerable<EmplooyerDTO>>(emplooyerEntity);
-        }
+        //public async Task<IEnumerable<EmplooyerDTO>> GetAllEmplooyerAsync()
+        //{
+        //    var emplooyerEntity = await _emplooyerRepository.GetAllEmplooyerAsync();
+        //    return _mapper.Map<IEnumerable<EmplooyerDTO>>(emplooyerEntity);
+        //}
 
-        public async Task<EmplooyerDTO> GetEmplooyerByIdAsync(int? id)
-        {
-            var emplooyerEntity = await _emplooyerRepository.GetEmplooyerByIdAsync(id);
-            return _mapper.Map<EmplooyerDTO>(emplooyerEntity);
-        }
+        //public async Task<EmplooyerDTO> GetEmplooyerByIdAsync(int? id)
+        //{
+        //    var emplooyerEntity = await _emplooyerRepository.GetEmplooyerByIdAsync(id);
+        //    return _mapper.Map<EmplooyerDTO>(emplooyerEntity);
+        //}
 
-        public async Task<EmplooyerDTO> GetEmplooyerByName(string name)
-        {
-            var emplooyerEntity = await _emplooyerRepository.GetEmplooyerByName(name);
-            return _mapper.Map<EmplooyerDTO>(emplooyerEntity);
-        }
+        //public async Task<EmplooyerDTO> GetEmplooyerByName(string name)
+        //{
+        //    var emplooyerEntity = await _emplooyerRepository.GetEmplooyerByName(name);
+        //    return _mapper.Map<EmplooyerDTO>(emplooyerEntity);
+        //}
 
         public async Task Create(EmplooyerDTO emplooyerDto)
         {

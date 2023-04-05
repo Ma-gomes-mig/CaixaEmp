@@ -31,6 +31,7 @@ namespace CaixaEmp.Infra.IoC
             services.AddScoped<IInclusionRepository, InclusionRepository>();
             services.AddScoped<IWithdrawalRepository, WithdrawalRepository>();
             services.AddScoped<IBalanceRepository, BalanceRespository>();
+            services.AddScoped<IMonthRepository, MonthRepository>();
 
             services.AddScoped<IEmplooyerService, EmplooyerService>();
             services.AddScoped<IExpenseCategoryService, ExpenseCategoryService>();

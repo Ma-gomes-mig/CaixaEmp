@@ -18,12 +18,12 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.Property(p => p.Office).HasMaxLength(50).IsRequired();
 
 
-            builder.HasData(new Emplooyer(1, "Dulce", "Administrativo"),
-                new Emplooyer(2, "Camila", "Administrativo"),
-                new Emplooyer(3, "Ane", "Estoque"),
-                new Emplooyer(4, "Leo", "Estoque"),
-                new Emplooyer(5, "Lucas", "TI"),
-                new Emplooyer(6, "Matheus", "TI"));
+            //builder.HasData(new Emplooyer(1, "Dulce", "Administrativo"),
+            //    new Emplooyer(2, "Camila", "Administrativo"),
+            //    new Emplooyer(3, "Ane", "Estoque"),
+            //    new Emplooyer(4, "Leo", "Estoque"),
+            //    new Emplooyer(5, "Lucas", "TI"),
+            //    new Emplooyer(6, "Matheus", "TI"));
         }
     }
 }

@@ -10,9 +10,9 @@ namespace CaixaEmp.Application.Interfaces
 {
     public interface IEmplooyerService
     {
-        Task<IEnumerable<EmplooyerDTO>> GetAllEmplooyerAsync();
-        Task<EmplooyerDTO> GetEmplooyerByIdAsync(int? id);
-        Task<EmplooyerDTO> GetEmplooyerByName(string name);
+        //Task<IEnumerable<EmplooyerDTO>> GetAllEmplooyerAsync();
+        //Task<EmplooyerDTO> GetEmplooyerByIdAsync(int? id);
+        //Task<EmplooyerDTO> GetEmplooyerByName(string name);
         Task Create(EmplooyerDTO emplooyerDto);
         Task Update(EmplooyerDTO emplooyerDto);
         Task Delete(EmplooyerDTO emplooyerDto);

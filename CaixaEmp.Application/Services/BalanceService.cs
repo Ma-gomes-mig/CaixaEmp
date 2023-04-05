@@ -21,10 +21,10 @@ namespace CaixaEmp.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<BalanceDTO>> GetAllBalanceAsync()
-        {
-            var balanceEntity = await _balanceRepository.GetAllBalanceAsync();
-            return _mapper.Map<IEnumerable<BalanceDTO>>(balanceEntity);
-        }
+        //public async Task<IEnumerable<BalanceDTO>> GetAllBalanceAsync()
+        //{
+        //    var balanceEntity = await _balanceRepository.GetAllBalanceAsync();
+        //    return _mapper.Map<IEnumerable<BalanceDTO>>(balanceEntity);
+        //}
     }
 }

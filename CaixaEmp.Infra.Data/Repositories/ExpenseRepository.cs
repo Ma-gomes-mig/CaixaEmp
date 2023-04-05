@@ -23,26 +23,26 @@ namespace CaixaEmp.Infra.Data.Repositories
             return await _expenseContext.Expenses.ToListAsync();
         }
 
-        public async Task<Expense> GetExpenseById(int? id)
-        {
-            return await _expenseContext.Expenses.FindAsync(id);
-        }
+        //public async Task<Expense> GetExpenseById(int? id)
+        //{
+        //    return await _expenseContext.Expenses.FindAsync(id);
+        //}
 
-        //Ainda não foi testado
-        public async Task<IEnumerable<Expense>> GetExpenseByEmplooyer(int id)
-        {
-            return await _expenseContext.Expenses.Where(e => e.EmplooyerId == id).ToListAsync();
-        }
+        ////Ainda não foi testado
+        //public async Task<IEnumerable<Expense>> GetExpenseByEmplooyer(int id)
+        //{
+        //    return await _expenseContext.Expenses.Where(e => e.EmplooyerId == id).ToListAsync();
+        //}
 
-        public async Task<Expense> GetExpenseEmplooyer(int? id)
-        {
-            return await _expenseContext.Expenses.Include(e => e.Emplooyer).SingleOrDefaultAsync(p => p.EmplooyerId == id);
-        }
+        //public async Task<Expense> GetExpenseEmplooyer(int? id)
+        //{
+        //    return await _expenseContext.Expenses.Include(e => e.Emplooyer).SingleOrDefaultAsync(p => p.EmplooyerId == id);
+        //}
 
-        public async Task<Expense> GetExpenseCategory(int? id)
-        {
-            return await _expenseContext.Expenses.Include(c => c.ExpenseCategory).SingleOrDefaultAsync(p => p.ExpenseCategoryId == id);
-        }      
+        //public async Task<Expense> GetExpenseCategory(int? id)
+        //{
+        //    return await _expenseContext.Expenses.Include(c => c.ExpenseCategory).SingleOrDefaultAsync(p => p.ExpenseCategoryId == id);
+        //}      
 
         public async Task<Expense> Create(Expense expense)
         {

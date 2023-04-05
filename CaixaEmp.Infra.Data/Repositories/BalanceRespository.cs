@@ -20,10 +20,10 @@ namespace CaixaEmp.Infra.Data.Repositories
 
         }
 
-        public async Task<IEnumerable<Balance>> GetAllBalanceAsync()
-        {
-            return await _applicationDbContext.Balances.ToListAsync();
-        }
+        //public async Task<IEnumerable<Balance>> GetAllBalanceAsync()
+        //{
+        //    return await _applicationDbContext.Balances.ToListAsync();
+        //}
 
     }
         
