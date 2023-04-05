@@ -24,7 +24,7 @@ namespace CaixaEmp.Infra.Data.Repositories
         }
                 
 
-        public async Task<Month> GetMothByIdAsync(int? id)
+        public async Task<Month> GetMonthByIdAsync(int? id)
         {
             return await _monthContext.Months.FindAsync(id);
         }

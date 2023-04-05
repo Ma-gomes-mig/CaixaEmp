@@ -10,6 +10,6 @@ namespace CaixaEmp.Domain.Interfaces
     public interface IMonthRepository
     {
         Task<IEnumerable<Month>> GetAllMonthAsync();
-        Task<Month> GetMothByIdAsync(int? id);
+        Task<Month> GetMonthByIdAsync(int? id);
     }
 }

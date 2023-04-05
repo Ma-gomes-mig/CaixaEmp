@@ -17,6 +17,11 @@ C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.I
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\refint\CaixaEmp.Infra.IoC.dll
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.pdb
 C:\Users\ti\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\ref\CaixaEmp.Infra.IoC.dll
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.csproj.AssemblyReference.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.AssemblyInfo.cs
+C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.csproj.CoreCompileInputs.cache
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEmp.Infra.IoC.deps.json
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEmp.Infra.IoC.dll
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEmp.Infra.IoC.pdb
@@ -26,11 +31,6 @@ C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEm
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEmp.Application.pdb
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEmp.Domain.pdb
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\bin\Debug\net7.0\CaixaEmp.Infra.Data.pdb
-C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.csproj.AssemblyReference.cache
-C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.AssemblyInfoInputs.cache
-C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.AssemblyInfo.cs
-C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.csproj.CoreCompileInputs.cache
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.csproj.CopyComplete
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\CaixaEmp.Infra.IoC.dll
 C:\Users\mathe\source\repos\CaixaEmp\CaixaEmp.Infra.IoC\obj\Debug\net7.0\refint\CaixaEmp.Infra.IoC.dll
