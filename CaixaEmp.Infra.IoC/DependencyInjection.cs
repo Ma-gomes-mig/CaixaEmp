@@ -39,6 +39,7 @@ namespace CaixaEmp.Infra.IoC
             services.AddScoped<IInclusionService, InclusionService>();
             services.AddScoped<IWithdrawalService, WithdrawalService>();
             services.AddScoped<IBalanceService, BalanceService>();
+            services.AddScoped<IMonthService, MonthService>();
 
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
