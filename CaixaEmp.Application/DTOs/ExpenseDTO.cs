@@ -43,8 +43,6 @@ namespace CaixaEmp.Application.DTOs
         //Definição da cardinalidade N Inclusion para 1 Expense
         public ICollection<Inclusion> Inclusions { get; set; }
 
-        //Definição da cardinalidade N Expense para 1 Month
-        public int MonthId { get; set; }
-        public Month Month { get; set; }
+       
     }
 }

@@ -17,6 +17,10 @@ namespace CaixaEmp.Application.DTOs
         [StringLength(20)]
         [DisplayName("Nome Mês")]
 
-        public ICollection<Expense> Expenses { get; set; }
+        //Definição da cardinalidade N Inclusion para 1 Month
+        public ICollection<Withdrawal> Withdrawals { get; set; }
+
+        //Definição da cardinalidade N Inclusion para 1 Month
+        public ICollection<Inclusion> Inclusions { get; set; }
     }
 }

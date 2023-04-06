@@ -21,7 +21,7 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
 
             builder.HasOne(e => e.Emplooyer).WithMany(e => e.Expenses).HasForeignKey(f => f.EmplooyerId);
             builder.HasOne(e => e.ExpenseCategory).WithMany(e => e.Expenses).HasForeignKey(f => f.ExpenseCategoryId);
-            builder.HasOne(e => e.Month).WithMany(e => e.Expenses).HasForeignKey(f => f.MonthId);
+            
 
             //builder.HasData(
             //    new Expense(1, "Compra objeto Higiêne", "Dinheiro destinado a compra do galão de agua", 30, "Média", 1, 1),

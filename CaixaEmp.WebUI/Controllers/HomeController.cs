@@ -13,13 +13,11 @@ namespace CaixaEmp.WebUI.Controllers
         {
             _context = context;
         }
-        
 
+        
         public async Task<IActionResult> Index()
         {
             return View(await _context.Expenses.ToListAsync());
-        }
-
-        
+        }    
     }
 }

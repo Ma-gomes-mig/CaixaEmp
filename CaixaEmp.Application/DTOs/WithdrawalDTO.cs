@@ -54,5 +54,9 @@ namespace CaixaEmp.Application.DTOs
         //Definição da cardinalidade N Withdrawal para 1 Balance
         public int BalanceId { get; set; }
         public Balance Balance { get; set; }
+
+        //Definição da cardinalidade N Withdrawal para 1 Month
+        public int MonthId { get; set; }
+        public Month Month { get; set; }
     }
 }
