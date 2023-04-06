@@ -21,6 +21,10 @@ namespace CaixaEmp.Domain.Entities
             Name = name;
         }
 
-        public ICollection<Expense> Expenses  { get; set; }
+        //Definição da cardinalidade N Inclusion para 1 Month
+        public ICollection<Withdrawal> Withdrawals { get; set; }
+
+        //Definição da cardinalidade N Inclusion para 1 Month
+        public ICollection<Inclusion> Inclusions { get; set; }
     }
 }
