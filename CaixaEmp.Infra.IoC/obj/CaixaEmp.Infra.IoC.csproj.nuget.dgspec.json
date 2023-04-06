@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {}
+    "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
         "projectName": "CaixaEmp.Application",
-        "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
-        "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
-                "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
+              "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
               },
-              "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj"
+              "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj"
               }
             }
           }
@@ -68,21 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
         "projectName": "CaixaEmp.Domain",
-        "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
-        "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -123,21 +123,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
         "projectName": "CaixaEmp.Infra.Data",
-        "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -151,8 +151,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
-                "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
+              "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
               }
             }
           }
@@ -204,21 +204,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
         "projectName": "CaixaEmp.Infra.IoC",
-        "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
-        "packagesPath": "C:\\Users\\ti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -232,14 +232,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj": {
-                "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj"
+              "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj"
               },
-              "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
-                "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
+              "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
               },
-              "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\ti\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj"
+              "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj"
               }
             }
           }
@@ -283,7 +283,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
