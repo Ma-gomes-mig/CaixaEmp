@@ -17,13 +17,12 @@ namespace CaixaEmp.Domain.Entities
         public Expense() { }
 
         //Construtor com todos os atributos
-        public Expense(int id, string name, string description, int emplooyerId, int expenseCategoryId)
+        public Expense(int id, string name, string description, int expenseCategoryId)
         {
             //DomainExceptionValidation.When(id < 0, "Invalid Id");
             Id = id;
             ValidateName(name);
-            ValidateDescription(description);
-            EmplooyerId = emplooyerId;
+            ValidateDescription(description);            
             ExpenseCategoryId = expenseCategoryId;
         }
 
@@ -32,11 +31,7 @@ namespace CaixaEmp.Domain.Entities
             ValidateName(name);
             ValidateDescription(description);
 
-        }
-
-        //Definição da cardinalidade N Expense para 1 Emplooyer
-        public int EmplooyerId { get; set; }
-        public Emplooyer Emplooyer { get; set; }
+        }       
 
         //Definição da cardinalidade N Expense para 1 ExpenseCategory
         public int ExpenseCategoryId { get; set; }

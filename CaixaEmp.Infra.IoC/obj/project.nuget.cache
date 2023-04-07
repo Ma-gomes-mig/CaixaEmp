@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aqz5RKbvfGWcK9Bg1XOkklES3MxEFJCIqt7t+XCi4eus4pQWtxKo+ylFS92hcuTbvPMXZq0xiAxDBeBlnpfBwQ==",
+  "dgSpecHash": "CYutqTE++bRbJU+s6zPmmwh5kNcICGHp/pBPKJ72yDXhJ+bLEO3m2u+8liS48ATBXf/Yrdtk9V8ffg2qsdFOQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.IoC\\CaixaEmp.Infra.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

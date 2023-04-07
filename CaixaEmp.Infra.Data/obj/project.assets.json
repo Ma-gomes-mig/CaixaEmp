@@ -3484,11 +3484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
       "projectName": "CaixaEmp.Infra.Data",
-      "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
+      "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\obj\\",
+      "outputPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3505,8 +3505,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
-              "projectPath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
+            "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj": {
+              "projectPath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Domain\\CaixaEmp.Domain.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QnpQjEmRB/tLiS8nsxkadi3lZ4CPOFCnZc+TEWYK/YEo03bC/Ll0y4CxRPI/AAB5D7YpBFi+zIDVZkYQBPj2eg==",
+  "dgSpecHash": "Aaxg1hAUNUUu9OMz6meGEfSJJVUEay3zRGsrK3eSe2s2lnv62pRfg74D/X69+QQ05miP1s9QlB/qsZGY1gUe2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Application\\CaixaEmp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

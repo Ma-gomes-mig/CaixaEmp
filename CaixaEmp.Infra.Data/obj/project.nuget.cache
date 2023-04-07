@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I2Os+J/KakirHDkjTZEHY+QGFPIKdH1UWkAV5qp4nvu6xCDLKUi5xIk1Ssanqyj8KG9bAg5V87rbMaxADscaDw==",
+  "dgSpecHash": "6y5UaTVzK71y7ESgzpCM3UnUTjOC+supgU0SufnFHOAQDv+kd2VXGnUoDOSjw15EDvY198VavmKT7HJIkBSEdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\Source\\Repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\source\\repos\\CaixaEmp\\CaixaEmp.Infra.Data\\CaixaEmp.Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

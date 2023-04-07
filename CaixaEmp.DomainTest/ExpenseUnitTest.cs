@@ -22,14 +22,14 @@ namespace CaixaEmp.DomainTest
         [Fact(DisplayName="CreateExpenseWithValidParameters")]
         public void CreateExpense_WithValidParameters_ResultObjectValidState()
         {
-            Action action = () => new Expense(1, "ExpenseName", "ExpenseDescription", 1, 1);
+            Action action = () => new Expense(1, "ExpenseName", "ExpenseDescription", 1);
             action.Should().NotThrow<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
         }
 
         [Fact(DisplayName ="CreateExenseWithNullDescription")]
         public void CreateExpense_WithNullDescription_DomainExceptionNullDescription()
         {
-            Action action = () => new Expense(1,"ExpenseName",null,2,2);
+            Action action = () => new Expense(1,"ExpenseName",null,2);
             action.Should()
                 .Throw<CaixaEmp.Domain.Validation.DomainExceptionValidation>();
         }

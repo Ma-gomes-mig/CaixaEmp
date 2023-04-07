@@ -14,19 +14,16 @@ namespace CaixaEmp.Application.DTOs
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="O nome é necessário")]
         [StringLength(50)]
-        [DisplayName]
+        [DisplayName("Nome")]
         public string Name { get; set; }
 
+        [Required(ErrorMessage ="A descrição é necessária")]
         [StringLength(150)]
         [DisplayName("Descrição")]
         public string Description { get; set; }
-
-
-        //Definição da cardinalidade N Expense para 1 Emplooyer
-        public int EmplooyerId { get; set; }
-        public Emplooyer Emplooyer { get; set; }
+        
 
         //Definição da cardinalidade N Expense para 1 ExpenseCategory
         public int ExpenseCategoryId { get; set; }
