@@ -12,27 +12,22 @@ namespace CaixaEmp.Domain.Entities
         //Atributos de Expense
         public string Name { get; private set; }
         public string Description { get; private set; }
-        public decimal Value { get; private set; }
-        public string Priority { get; private set; }
-
 
         //Constructor vazio
         public Expense() { }
 
         //Construtor com todos os atributos
-        public Expense(int id, string name, string description, decimal value, string priority, int emplooyerId, int expenseCategoryId)
+        public Expense(int id, string name, string description, int emplooyerId, int expenseCategoryId)
         {
             //DomainExceptionValidation.When(id < 0, "Invalid Id");
             Id = id;
             ValidateName(name);
             ValidateDescription(description);
-            Value = value;
-            Priority = priority;
             EmplooyerId = emplooyerId;
             ExpenseCategoryId = expenseCategoryId;
         }
 
-        public void Update(string name, string description, string priority)
+        public void Update(string name, string description)
         {
             ValidateName(name);
             ValidateDescription(description);

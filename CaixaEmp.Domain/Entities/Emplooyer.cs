@@ -29,9 +29,6 @@ namespace CaixaEmp.Domain.Entities
             ValidateName(name);
         }
 
-        //Definição da cardinalidade N Expense para 1 Emplooyer
-        public ICollection<Expense> Expenses { get; set; }
-
         //Definição da cardinalidade N Withdrawal para 1 Emplooyer
         public ICollection<Withdrawal> Withdrawals { get; set; }
 

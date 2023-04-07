@@ -23,8 +23,6 @@ namespace CaixaEmp.Application.DTOs
         public string Office { get; set; }
 
         //Definição da cardinalidade N Expense para 1 Emplooyer
-        public ICollection<Expense> Expenses { get; set; }
-        //Definição da cardinalidade N Expense para 1 Emplooyer
         public ICollection<Withdrawal> Withdrawal { get; set; }
         //Definição da cardinalidade N Inclusion para 1 Emplooyer
         public ICollection<Inclusion> Inclusions { get; set; }

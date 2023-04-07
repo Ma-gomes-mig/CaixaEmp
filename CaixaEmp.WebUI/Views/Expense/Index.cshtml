@@ -1,12 +1,17 @@
-﻿@model IEnumerable<CaixaEmp.Domain.Entities.Expense>
+﻿@model IEnumerable<CaixaEmp.Application.DTOs.ExpenseDTO>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<p>
+<p class="btnNovo">
     <a asp-action="Create">Criar nova Despesa</a>
 </p>
+
+@if(TempData["Confirmacao"] != null)
+{
+    <h6 class="alert alert-success">@TempData["Confirmacao"]</h6>
+}
 <table class="table">
     <thead>
         <tr>
@@ -15,13 +20,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Value)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Priority)
-            </th>
+            </th>            
             <th></th>
         </tr>
     </thead>
@@ -36,16 +35,8 @@
                     @Html.DisplayNameFor(modelItem => item.Description)
                 </td>
                 <td>
-                    @Html.DisplayNameFor(modelItem => item.Value)
-                </td>
-                <td>
-                    @Html.DisplayNameFor(modelItem => item.Priority)
-                </td>
-
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id">Deleção</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">Editar</a> |                    
+                    <a asp-action="Delete" asp-route-id="@item.Id" clas="btn btn-danger">Deleção</a>
                 </td>
             </tr>
         }

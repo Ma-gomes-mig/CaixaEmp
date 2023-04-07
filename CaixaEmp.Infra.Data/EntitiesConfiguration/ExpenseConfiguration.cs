@@ -16,10 +16,8 @@ namespace CaixaEmp.Infra.Data.EntitiesConfiguration
             builder.HasKey(e => e.Id);
             builder.Property(p => p.Name).HasMaxLength(50).IsRequired();
             builder.Property(p => p.Description).HasMaxLength(150).IsRequired();
-            builder.Property(p => p.Value).HasPrecision(10, 2).IsRequired();
-            builder.Property(p => p.Priority).HasMaxLength(30).IsRequired();
 
-            builder.HasOne(e => e.Emplooyer).WithMany(e => e.Expenses).HasForeignKey(f => f.EmplooyerId);
+            
             builder.HasOne(e => e.ExpenseCategory).WithMany(e => e.Expenses).HasForeignKey(f => f.ExpenseCategoryId);
             
 

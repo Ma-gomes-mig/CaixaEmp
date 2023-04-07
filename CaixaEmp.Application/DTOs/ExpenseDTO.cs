@@ -23,11 +23,6 @@ namespace CaixaEmp.Application.DTOs
         [DisplayName("Descrição")]
         public string Description { get; set; }
 
-        
-       public decimal Value { get; set; }
-        [Required]
-        [StringLength(30)]
-       public string Priority { get; set; }
 
         //Definição da cardinalidade N Expense para 1 Emplooyer
         public int EmplooyerId { get; set; }

@@ -4,6 +4,7 @@ using CaixaEmp.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaixaEmp.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230407121555_AtualizacaoTabelaExpense")]
+    partial class AtualizacaoTabelaExpense
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,32 +122,6 @@ namespace CaixaEmp.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Todo material que seja para uso da higiene da area de trabalho como: Esponja, detergente, papel higiênico, etc...",
-                            Name = "Insumos Higiene"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Todo material que seja para uso do escritório como:Fita adesiva, lápis, grampos, papel para impressão, etc...",
-                            Name = "Insumos Papelaria"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Todo material que seja para uso dos colaboradores como: Biscoito, agua, etc",
-                            Name = "Insumos Alimentares"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Description = "Todo material que seja para uso dos colaboradores como: Remedio, band-aid",
-                            Name = "Insumos Saude"
-                        });
                 });
 
             modelBuilder.Entity("CaixaEmp.Domain.Entities.Inclusion", b =>
