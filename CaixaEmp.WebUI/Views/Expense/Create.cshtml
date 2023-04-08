@@ -11,23 +11,32 @@
         <div asp-validation-summary="All" class="text-dark"></div>
 
         <div class="form-group">
-
             <label asp-for="Name" class="col-md-2 control-label">Nome</label>
             <div class="col-md-10">
                 <input asp-for="Name" class="form-group"/>
                 <span asp-validation-for="Name" class="text-black"></span>
             </div>
+        </div>
+        <div class="form-group">
             <label asp-for="Description" class="col-md-2 control-label">Descrição</label>
             <div class="col-md-10">
                 <input asp-for="Description" class="form-group" />
                 <span asp-validation-for="Description" class="text-black"></span>
-            </div>            
+            </div>
         </div>
+        <div class="form-group">
+            <label asp-for="ExpenseCategoryId" class="col-md-2 control-label">Categoria</label>
+            <div class="col-md-10">
+                <select asp-for="ExpenseCategoryId" class="form-control" asp-items="ViewBag.Id"></select>
+                <span asp-validation-for="ExpenseCategoryId" class="text-danger"></span>
+            </div>
+        </div>
+        
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Criar" class="btn btn-success" />
-                <a asp-action="Index" class="btn btn-info">Voltar a lista</a>
+                <input type="submit" value="Criar" class="btn btn-outline-success" />
+                <a asp-action="Index" class="btn btn-outline-dark">Voltar a lista</a>
             </div>
         </div>
     </div>

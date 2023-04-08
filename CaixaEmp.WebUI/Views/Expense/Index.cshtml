@@ -16,7 +16,7 @@
     <div class="col-md-12">
         <div>
             <div class="pull-left">
-                <a asp-action="Create" type="button" class="btn btn-dark">
+                <a asp-action="Create" type="button" class="btn btn-outline-dark">
                     Criar nova despesa
                 </a>
                 
@@ -43,10 +43,10 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayNameFor(modelItem => item.Name)
+                        @Html.DisplayFor(modelItem => item.Name)
                     </td>
                     <td>
-                        @Html.DisplayNameFor(modelItem => item.Description)
+                        @Html.DisplayFor(modelItem => item.Description)
                     </td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">Editar</a> |

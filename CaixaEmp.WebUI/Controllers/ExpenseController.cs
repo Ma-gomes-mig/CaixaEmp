@@ -27,7 +27,7 @@ namespace CaixaEmp.WebUI.Controllers
         [HttpGet]
         public IActionResult Create() 
         {
-            ViewData["CategoryId"] = new SelectList(_applicationDbContext.Categories, "CategoryId", "Name");
+            ViewData["Id"] = new SelectList(_applicationDbContext.Categories, "Id", "Name");
             return View();
         }
 
@@ -37,7 +37,7 @@ namespace CaixaEmp.WebUI.Controllers
         {
             if(ModelState.IsValid)
             {
-                TempData["Confirmacao"] = expense.Name + "foi cadastrada com sucesso.";
+                TempData["Confirmacao"] = expense.Name + " foi cadastrada com sucesso.";
                 await _expenseService.Create(expense);
                 return RedirectToAction(nameof(Index));
             }
