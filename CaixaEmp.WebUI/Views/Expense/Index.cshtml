@@ -25,6 +25,17 @@
     </div>
 </div>
 <br/>
+<form asp-action="Index" asp-controller="Expense" method="post">
+    <div class="form-group">
+        <div class="input-group col-md-6">
+            <input class="form-group" name="txtProcurar"/>
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-outline-dark"><i class="fas fa-search-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</form>
+<br/>
 <div class="panel panel-default">
     <table class="table table-striped">
         <thead>
