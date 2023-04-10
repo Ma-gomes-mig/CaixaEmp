@@ -28,6 +28,7 @@ namespace CaixaEmp.WebUI.Controllers
             return View(expense);
         }
 
+        //Filtra a busca por nome das despesas "Expense"
         [HttpPost]
         public async Task<IActionResult> Index(string txtProcurar)
         {            
@@ -39,7 +40,7 @@ namespace CaixaEmp.WebUI.Controllers
                     Description = dto.Description
                 }).ToListAsync());                
             return View(await _expenseService.GetAllExpenseAsync());
-            //    return View(await _applicationDbContext.Expenses.Where(e=>e.Name.ToUpper().Contains(txtProcurar.ToUpper())).ToListAsync());
+            
 
         }
 
